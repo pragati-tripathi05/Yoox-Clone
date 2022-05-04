@@ -1,0 +1,240 @@
+#navigation{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Montserrat;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+}
+ul{
+    display: flex;
+    text-align: center;
+    margin-left: 40%;
+}
+li {
+    cursor: pointer;
+    height: 16px;
+    padding: 4px 6px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+li:hover{
+    color: rgb(156, 146, 146);
+}
+
+#content{
+    margin: auto;
+    margin-top: 6%;
+    /* border: 1px solid red; */
+    width: 70%;
+    height: auto;
+}
+#first{
+    display: flex;
+    height: 480px;
+}
+#firstrowleft{
+    /* border: 2px solid red; */
+    width: 65%;
+}
+#fimg{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 400px;
+    margin-bottom: 5%;
+}
+#cardcontent{
+    background-color: white;
+    color: #333;
+    text-align: left;
+    width: 24%;
+    height: auto;
+    padding: 2%;
+    margin-top: -12%;
+    margin-left: 1%;
+    /* border: 1px solid orangered; */
+    position: absolute;
+    z-index: 5;
+}
+#cardcontent p{
+    text-align: left;
+}
+#firstrowright{
+    /* border: 2px solid green; */
+    width: 35%;
+}
+#simg{
+    /* border: 2px solid blueviolet; */
+    width: 90%;
+    height: 300px;
+    margin-left: 9%;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 45px;
+    color: #333;
+    font-weight: bolder;
+    line-height: 7px;
+}
+span{
+    color: #cbbb97;
+    font-family: Arial;
+}
+
+hr{
+    background-color: #cbbb97;
+    width: 50px;
+    height: 2px;
+    border: navajowhite;
+    margin-left: 48%;
+}
+h3{
+    color: #cbbb97;
+    text-align: center;
+    font-family: Montserrat;
+}
+#second{
+    margin-top: 25px;
+    margin-left: 18%;
+    height: 450px;
+    width: 600px;
+}
+#unique{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+#uniquesub{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Montserrat;
+}
+#third{
+    display: flex;
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+#third div{
+    width: 45%;
+    /* border: 1px solid blue; */
+    height: auto;
+}
+
+#leftone{
+    width: 100%;
+    height: 400px;
+}
+#lefttwo{
+    width: 90%;
+    height: 300px;
+    margin-top: 10%;
+}
+#rightcards{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+#rightone{
+    width: 100%;
+    height: 500px;
+}
+
+#toppicks{
+    margin-top: 4%;
+    height: 180px;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+/* #toppicks div{
+    display: flex;
+    align-items: center;
+} */
+
+h4{
+    font-family: Montserrat;
+    font-weight: bold;
+    text-align: center;
+}
+
+#front{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 10px;
+}
+#front img{
+    width: 80%;
+    height: 100%;
+}
+#scrolled{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 10px;
+}
+#scrolled img{
+    width: 80%;
+    height: 100%;
+}
+#seeall{
+    width: 100%;
+    height: 75%;
+    margin-top: 8%;
+}
+#insidecontent{
+    /* border: 2px solid teal; */
+    text-align: center;
+    background-color: none;
+    position: absolute;
+    z-index: 2;
+    margin-top: -14%;
+    margin-left: 20%;
+}
+#designallseeall{
+    font-size: 28px;
+    font-weight: bolder;
+    color: white;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+}
+#suball{
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    font-family: Montserrat;
+    word-spacing: 5px;
+}
+#linktoseeall{
+    font-size: 16px;
+    color: white;
+    font-family: Montserrat;
+    text-decoration: underline;
+    margin-top: 15%;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*For pictures
+/*@media (min-width: 720px)
+.BNR_TOP_1__KEN1F picture {
+    display: block;
+    height: 0;
+    padding-bottom: 72.2973%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    */
