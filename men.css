@@ -1,0 +1,281 @@
+*{
+    background-color:  #f3f3f3;
+}
+#img1{
+    width: 1250px;
+    height: 540px;
+    padding: auto;
+    margin-left: 150px;
+    border: 1px solid white;
+    background-image: url("https://www.yoox.com/images/yoox80/banners/6824_1_Wedding_Main_M.jpg?634485886601286852&impolicy=cropDefault&width=3560&height=610");
+}
+#box{
+    width: 430px;
+    height: 140px;
+    background-color: white;
+    /* border: 1px solid black; */
+    margin-top: 370px;
+    padding: auto;
+    justify-content: space-around;
+    /* text-align: center; */
+    margin-left: 15px;
+    color: black;
+    
+}
+#wonder{
+    font-family: Playfair Display,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    display: block;
+    background-color: white;
+    margin-left: 40px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+    padding-top: 20px;
+    
+}
+#celebrate{
+    font-size: 14.5px;
+    line-height: 19px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    margin-left: 40px;
+    background-color: white;
+    color: black;
+    display: block;
+    margin-left: 40px;
+    font-family: Playfair Display,sans-serif;}
+#shop{
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 20px;
+    font-size: 15px;
+    text-decoration: solid underline;
+    color: black;
+    font-weight: 600;
+    background-color: #f3f3f3;
+    font-family: Playfair Display,sans-serif;
+}
+a{
+    background-color: white;
+}
+#img2{
+    width: 75%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-left: 200px;
+}
+#box1{
+    /* height: 600px; */
+    margin-top: 100px;
+    text-align: center;
+    /* background-image: url("https://www.yoox.com/images/yoox80/banners/6824_11_ShoesEdit_M_HL.jpg?634485886601286852#width=500&height=600"); */
+}
+#box2{
+    /* height: 600px; */
+    text-align: center;
+    /* width: 430px; */
+    margin-left: -30px;
+    padding-left: -60px;
+    /* position: relative; */
+    margin-top: 100px;
+  /* background-image: url("https://www.yoox.com/images/yoox80/banners/6824_1_HL_Topwear_M.jpg?634485886601286852#width=500&height=600"); */ 
+}
+#text{
+    /* border: 1px solid  black; */
+    width: 314px;
+    height: 501px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin-left: -30px;
+    padding-right: 50px;
+    /* margin-right: 30px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    position: relative;
+    /* float: inline-end; */
+
+   
+}
+ #title{
+    font-family: Montserrat,sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: .4px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+    margin-left: 80px;
+    /* position: absolute; */
+    
+ }
+ ul{
+    /* border: 1px solid  black; */
+    width: 250px;
+    font-family: Montserrat,sans-serif;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     
+     font-weight: 600;
+     /* padding-right: 50px; */
+     margin-right: 50px;
+     /* margin-left: -10px; */
+ }
+ #fancy{
+    font-family: Playfair Display,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 12px;
+    margin-top: 25px;
+ }
+ #find{
+    font-size: 15px;
+    font-weight: 100;
+    display: block;
+    color: #a397bd;
+ }
+ #new{
+    font-size: 28px;
+    margin-bottom: 23px;
+    margin-top: 250px;
+    margin-left: 50px;
+    width: 300px;
+    /* border: 1px solid; */
+ }
+ #container{
+     display: flex;
+     gap: 20px;
+     overflow:scroll;
+    
+     /* scroll-behavior: auto; */
+ }
+ 
+ #flex{
+     display: flex;
+     gap: 150px;
+     margin-top: 150px;
+ }
+ #newer{
+     /* border: 1px solid; */
+     width: 500px;
+     height: auto;
+     text-align: center;
+     /* margin-right: 250px; */
+ }
+ .box{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    text-align: center;
+    background-color: white;
+ }
+ .div{
+     display: flex;
+     gap: 17px;
+     text-align: center;
+     justify-content: center;
+     background-color: white;
+ }
+ .back{
+    background-color: white;
+ }
+ .line{
+     text-decoration: line-through;
+     color: #b6afc3;
+     background-color: white;
+ }
+ .price{
+     font-weight: bolder;
+     background-color: white;
+ }
+#box3{
+    width: 100%;
+    height: 780px;
+    /* border: 1px solid; */
+    background-color: white;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+}
+#image{
+    width: 355px;
+    background-color: white;
+    height: 450px;
+    margin-top: 150px;
+}
+#image1{
+    width: 405px;
+    height: 510px;
+    margin-top: 100px;
+}
+#id1,#id2,#id3{
+    background-color: white;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+#vans{
+    font-family: Playfair Display,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 12px;
+    background-color: white;
+}
+#make{
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+    background-color: white;
+}
+#container1{
+    /* border: 1px solid; */
+    display: flex;
+    gap: 20px;
+    overflow:scroll;
+}
+#box4{
+    width: 840px;
+    border:1px solid white;
+height: 628px;
+margin-left: 250px;
+margin-top: 150px;
+background-image: url("https://www.yoox.com/images/yoox80/banners/6833_3_8byoox_SS22_Special.jpg?634485886601286852#width=930&height=660");
+}
+#container3{
+    width: 270px;
+    height: 450px;
+    /* border: 1px solid; */
+    background-color: white;
+    margin-left: 970px;
+    margin-top: -530px;
+    text-align: center;
+}
+#container2{
+    /* border: 1px solid; */
+    display: flex;
+    gap: 20px;
+    overflow:scroll;
+}
+.zero{
+    width:90%;
+    height: auto;
+    margin-left: 70px;
+    display: flex;
+    margin-top: 150px;
+}
+.one{
+    width: 50%;
+    height: 495px;
+    background-image: url("https://www.yoox.com/images/yoox80/banners/6769_1_Humantouch_Half.jpg?634485886601286852#width=690&height=637");
+}
+.two{
+    width: 50%;
+    height: 495px;
+    background-image: url("https://www.yoox.com/images/yoox80/banners/6895_1_EarthDay_HB.jpg?634485886601286852#width=689&height=636");
+}
