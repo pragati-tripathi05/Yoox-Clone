@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 150px;
+            height: 180px;
+            margin: 10%;
+    }
+    </style>
+</head>
+<body>
+    <div id="slideshow">
+        <!--Show Slideshow here-->
+        <!-- <button onmouseover="start()" id="start"> <i class="fa-solid fa-play"></i> Start SlideShow </button>
+        <button onclick="stop()" id="stop"> <i class="fa-solid fa-pause"></i> Pause or Stop <i class="fa-solid fa-stop"></i></button> -->
+        <br/>
+        <br/>
+        <div id="images" onmouseover="start()" onmouseout="stopit()">
+        <img src="https://www.yoox.com/images/items/17/17120675AO_10_f.jpg"/></div>
+    </div>
+</body>
+</html>
+
+<script>
+    var data = [
+    {img : "https://www.yoox.com/images/items/17/17120675AO_10_r.jpg"},
+    {img : "https://www.yoox.com/images/items/17/17120675AO_10_d.jpg"},
+    {img : "https://www.yoox.com/images/items/17/17120675AO_10_e.jpg"},
+    {img : "https://www.yoox.com/images/items/17/17120675AO_10_d.jpg"},
+    {img : "https://www.yoox.com/images/items/17/17120675AO_10_r.jpg"},
+];
+
+let imagesDiv = document.getElementById("images");
+let i=0;
+
+let id;
+
+function start()
+{
+    let img = document.createElement("img");
+    img.style.height = "500px";
+    
+    id = setInterval(function(){
+        if(i === 5)
+        i = 0;
+        imagesDiv.innerHTML = null;
+        img.src = data[i].img;
+        img.style.width = "150px";
+        img.style.height = "180px";
+
+        imagesDiv.append(img);
+        i++;
+    }, 1500);
+}
+
+function stopit()
+{
+    clearInterval(id);
+}
+</script>
