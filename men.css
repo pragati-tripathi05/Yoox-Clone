@@ -1,5 +1,6 @@
 *{
     background-color:  #f3f3f3;
+    font-family: Playfair Display,sans-serif;
 }
 #img1{
     width: 1250px;
@@ -152,6 +153,7 @@ a{
      display: flex;
      gap: 20px;
      overflow:scroll;
+     overflow-y: hidden;
     
      /* scroll-behavior: auto; */
  }
