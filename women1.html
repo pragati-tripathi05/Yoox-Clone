@@ -6,14 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="https://kit.fontawesome.com/03120bbf35.js" crossorigin="anonymous"></script>
-<title>Tops</title>
+<link data-react-helmet="true" rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="https://media.yoox.biz/yoox16/fonts/montserrat/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2">
+<link data-react-helmet="true" rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="https://media.yoox.biz/yoox16/fonts/montserrat/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2">
+<link data-react-helmet="true" rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="https://media.yoox.biz/yoox16/fonts/montserrat/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2">
+<link data-react-helmet="true" rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="https://media.yoox.biz/yoox16/fonts/montserrat/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2">
+<link data-react-helmet="true" rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="https://media.yoox.biz/yoox16/fonts/SourceSansPro/SourceSansPro-Regular.woff2">
+<title>YOOX-Women-Dresses</title>
+</head>
 <style>
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
 
-}
 
 #Box {
 display: flex;
@@ -51,15 +52,16 @@ margin-left: 8%;
     padding-left: 100px;
     padding-right: 100px;
 }
+
 * {
     box-sizing: border-box;
     font-size: 11PX;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin: 0;
     padding: 0;
-    line-height: 36px;
+    line-height: 30px;
     color: #323232;
-    font-family: 'Lato',sans-serif;
+    font-family: 'Montserrat',sans-serif;
 }
 
 .exleft {
@@ -67,6 +69,9 @@ margin-left: 8%;
     justify-content: space-between;
     gap: 10px;
     cursor:pointer;
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+    
     /* margin-left: 20px; */
     /* padding: 0px 30px 0px 30px; */
 }
@@ -77,16 +82,24 @@ margin-left: 8%;
     justify-content: space-between;
     gap: 20px;
     cursor: pointer;
+    font-weight:700;
+    font-family: 'Montserrat',sans-serif;
+    
      /* margin-left: 20px; 
      padding: 0px 30px 0px 30px;  */
 }
-
+.exleft2 :hover {
+    border-bottom: 4px solid yellow;
+}
 
 
 
 .exright {
     margin-right: 20px;
     cursor:pointer;
+    font-weight:700;
+    font-family: 'Montserrat',sans-serif;
+
 }
 
 /* .exright2 {
@@ -99,6 +112,8 @@ margin-left: 8%;
     display: block;
     margin-bottom:5px ;
     cursor:pointer;
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
     /* align-items: center; */
     /* justify-content: space-around; */
     /* border-right: 1px solid rgb(41, 38, 38); */
@@ -113,6 +128,7 @@ margin-left: 8%;
     margin-bottom: 15px;
     margin-top: -12px;
     cursor:pointer;
+    font-weight: 700;
      
 }
 
@@ -129,7 +145,9 @@ margin-left: 8%;
     width: 150px;
     height: 30px;
     margin-bottom: 20px;
+    font-weight: 700;
     cursor:pointer;
+    font-family: 'Montserrat',sans-serif;
 }
 
 .rightside2 {
@@ -139,6 +157,8 @@ margin-left: 8%;
     width: 150px;
     height: 30px;
     cursor:pointer;
+    
+
  } 
 
 .rightside div {
@@ -190,7 +210,7 @@ margin-left: 8%;
 
 /* second navbar */
 
-.topmost-2 {
+/* .topmost-2 {
     height: 20px;
     width: 100%;
     display: flex;
@@ -207,14 +227,14 @@ margin-left: 8%;
 }
 
 .hmiddle div {
-    /* border: 1px solid black; */
+    border: 1px solid black; 
     display: flex;
     padding: 8px;
     border-bottom: 4px solid transparent;
     font-size: 11.5px;
     line-height: 18px;
 
-}
+} */
 
 /* .headerbox {
     margin-top: 90px;
@@ -247,31 +267,31 @@ margin-left: 8%;
     
 }
 
-.hright {
+/* .hright {
     max-width: 170px;
     width: 100%;
     margin-left: 15px;
     float: left;
-    /* position: relative; */
-}
+     position: relative; 
+} */
 
-.hright img {
+/* .hright img {
     max-width: 100%;
     border: none;
     display: block;
-}
+} */
 
-
-.hleft {
+/* 
+.hleft { */
     /* padding: 3px 7px;
     font-size: 13px;
     margin-right: 20px; */
-    float: right;
+    /* float: right;
     margin: 4px 15px 0 0;
     position: relative;
     cursor: pointer;
     z-index: 2;
-}
+} */
 
 /* nav {
     display: block;
@@ -295,13 +315,15 @@ ul {
 .lvl-1>li {
     float: left;
     display: block;
-    list-style: none;
+    list-style:none;
     cursor:pointer;
 
 }
 
-.lvl-1 > li  :hover {
+
+.lvl-1 > li :hover {
     color: rgb(156, 146, 146);
+  
 }
 
 .lvl-1>li>a {
@@ -317,13 +339,15 @@ ul {
     color: #ffffff;
     text-transform: uppercase;
     border-bottom: 4px solid transparent;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat',sans-serif;
+
 }
+
 
 /* MEGA MENU  */
 
 
-.menucntr ul li .sub-menu {
+.menucntr > ul > li > .sub-menu {
     position: absolute;
     width: 100%;
     /* border: 2px solid black; */
@@ -335,23 +359,47 @@ ul {
 
 
 
-.menucntr ul li .sub-menu .col {
+.menucntr > ul >li >.sub-menu >.col {
     display: flex;
     justify-content: space-around;
-  
     width: 140.8%;
     background-color: white;
     margin-left: -20%;
     visibility: hidden;
 
 }
+.menucntr > ul >li >.sub-menu >.col > div {
+    gap:10px;
+
+}
+
+
 
 
 .menucntr ul li :hover .col {
     visibility: visible;
 }
 
+.sub-menu {
+    height: 5px;
+    margin-top: 0;
+}
+.sub-menu > .col > div > h5 {
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+}
+.sub-menu > .col > div > a {
+    font-weight: 500;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+}
 
+.sub-menu > .col > div > p {
+    font-weight: 500;
+    font-size: 11px;
+    font-family: 'Montserrat',sans-serif;
+}
 .thirdheader {
     display: flex;
     justify-content: space-around;
@@ -365,7 +413,7 @@ ul {
 
 } */
 
-.thirdheader div {
+/* .thirdheader div {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -373,7 +421,7 @@ ul {
     height: 50px;
     text-align: center;
     
-}
+} */
 
 /* .rose {
     margin-top: 180px;
@@ -381,14 +429,14 @@ ul {
     font-family: 'lato',sans-serif;
     font-size: 11px;
 } */
-
+/* 
 .darkrose {
     margin-top:140px;
     background-color: #ce79ff96;
-    font-family: 'lato',sans-serif;
+    font-family: 'Montserrat',sans-serif;
     font-size: 16px;
     width:100%;
-}
+} */
 
 
 #topsection {
@@ -418,7 +466,7 @@ width:220px;
 margin:auto;
 position: relative; 
 cursor: pointer;  
-font-family: 'lato';
+font-family: 'Montserrat',sans-serif;
 font-size: 13.28px;
 box-sizing: border-box solid;
 }
@@ -427,7 +475,7 @@ box-sizing: border-box solid;
 position:absolute;
 left:-9999px;
 
-font-family: 'lato';
+font-family: 'Montserrat',sans-serif;
 font-size: 13.28px;
 }
 
@@ -442,7 +490,7 @@ box-sizing: border-box;
 color:black;
 text-shadow: none ;
 border-radius: 0.2em;
-font-family: 'lato';
+font-family: 'Montserrat',sans-serif;
 font-size: 13.28px;
 box-sizing: border-box solid;
 }
@@ -468,7 +516,7 @@ text-align:  center;
 box-sizing: border-box;
 cursor: pointer;
 width: 100%;
-font-family: 'lato';
+font-family: 'Montserrat',sans-serif;
 font-size: 13.28px;
 box-sizing: border-box solid;
 }
@@ -482,7 +530,7 @@ box-sizing: border-box;
 width: 100%;
 overflow: hidden;
 max-height: 0;
-font-family: 'lato';
+font-family: 'Montserrat',sans-serif;
 font-size: 13.28px;
 transition: all 250ms ease;
 box-sizing: border-box solid;
@@ -541,7 +589,7 @@ padding: 10px 10px 10px 10px;
 }
 
 .bottom p{
-  font-family:'lato';
+  font-family: 'Montserrat',sans-serif;
   font-size: 16px;
   color: #000000;
    
@@ -578,7 +626,7 @@ margin-top:none ;
 margin-bottom: 20px;
 
 box-shadow: 2.5px 5px #888888;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: 'Montserrat',sans-serif;
 }
 
 h4 strike {
@@ -652,299 +700,8 @@ border-color: none;
 outline: 0;
 }
 
-.maincenter {
-    max-width: 1200px;
-    width: 100%;
-    border-bottom: 1px solid #dcdcdc;
-    margin: auto;
-}
 
-.txtcenter {
-    padding-top: 20px;
-}
-
-.txtcenter span {
-    position: relative;
-    background: #fbfbfb;
-    padding-right: 5px;
-}
-
-.txtcenter h1 {
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.txtcenter h1 ::before {
-    content: "";
-    position: absolute;
-    background: #dcdcdc;
-    width: 240%;
-    height: 1px;
-    top: 50%;
-}
-
-.txtcenter h1 span {
-    position: relative;
-    background: #fbfbfb;
-    padding-right: 5px;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-  
-.ftrtextscroll {
-    height: 115px;
-    overflow-y: scroll;
-}
-
-.ftrtextscroll p {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 20px;
-}
-
-.ftrtextscroll h2 {
-    font-size: 15px;
-    text-transform: none;
-}
-
-/* footer {
-    background-color: rgb(255, 254, 254);
-}
-
-.maincenter .googleplay {
-    padding-top: 20px;
-    display: flex;
-    border-bottom: 1px solid #dcdcdc;
-}
-
-.maincenter div img {
-    width: 825px;
-    height: 105px;
-    margin-bottom: 25px;
-}
-
-.googleplay {
-    margin-top: 10px;
-  
-}
-
-.footerimg {
-    margin-top: 10px;
-    margin-bottom: 25px;
-}
-
-.googleplay h2 {
-    background: #fbfbfb;
-    padding-right: 5px;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.googleplay :nth-child(2) {
-
-    width: 100%;
-    display: inline;
-}
-
-.googleplay :nth-child(2) h2 {
- 
-    text-align: center;
-}
-
-.googleplay :nth-child(2) div {
-    display: flex;
-    justify-content: space-around;
-}
-
-.googleplay :nth-child(2) img {
-    width: 130px;
-    height: 40px;
-}
-
-/* fotter vla text below scroll  */
-
-.faballeycsr {
-    display: flex;
-    border-bottom: 1px solid rgb(202, 197, 197);
-    justify-content: space-evenly;
-    text-align: center;
-    width: 92%;
-    margin: auto;
-    
-}
-
-.faballeycsr h2 {
-    font-size: 16px;
-    font-weight: 700;
-    padding-top: 30px;
-}
-
-.faballeycsr p {
-    line-height: 8px;
-    font-size: 13px;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 25px;
-    ;
-}
-
-.btn {
-    background-color: #323232;
-    color: #dcdcdc;
-    padding: 12px;
-    border-radius: 0;
-}
-
-.input {
-    width: 240px;
-    margin: 5px;
-}
-
-.help {
-    display: inline-block;
-    
-    min-height: 200px;
-    width: 44%;
-    border-right: 1px solid #dcdcdc;
-    margin-right: 30px;
-    margin-top: 10px;
-}
-
-
-/* .firstcom {
-    border-right: 1px solid #dcdcdc;
-    text-align: left;
-    padding-right: 50px;
-} */
-
-/* .newsletter{ */
-/* border: 1px solid palevioletred; */
-/* } */
-/* .havetwo {
-    
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-    margin-top: 5px;
-} */
-
-/* .newsletter {
-    text-align: center;
-    margin-top: 10px;
-} */
-
-/* .company {
-    margin-top: 10px;
-   
-}
-
-.companyone {
-    margin-top: 10px;
-    
-}
-
-.connecticon {
-    
-    margin-top: 54px;
-} */
-
-/* second last box   */
-/* 
-.threediv {
-    display: flex;
-    justify-content: space-around;
-    height: 200px;
-    border-bottom: 1px solid #dcdcdc;
-    width: 94%;
-    margin: auto;
-    padding-bottom: 15px;
-}
-
-.threediv p {
-    line-height: 8px;
-    font-size: 13px;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 25px;
-    ;
-} */
-
-/* .head {
-    
-    width: 350px;
-    margin-top: 15px;
-    border-right: 1px solid #dcdcdc;
-    padding-right: 15px;
-} */
-/* 
-.insidehead {
-    margin-top: 25px;
-}
-
-.insidehead h2 {
-    margin-bottom: 25px;
-} */
-
-/* .return {
- 
-    margin-top: 35px;
-    padding-right: 25px;
-    border-right: 1px solid #dcdcdc;
-}
-
-.return h2 {
-    margin-bottom: 45px;
-} */
-
-/* .return p {
-    width: 200px;
-}
-
-.payment {
-  
-    margin-top: 35px;
-    width: 400px;
-} */
-
-/* .threediv h2 {
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.secondlast {
-    border-bottom: 1px solid #dcdcdc;
-    margin: auto;
-    width: 88%;
-    padding-top: 15px;
-} */
-
-/* .secondlast h3 {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 16px 0 16px 0;
-}
-
-.secondlast p {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 25px;
-}
-
-.copyright {
-    text-align: center;
-} */
-
-/* .copyright p {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 25px;
-    text-indent: 68px;
-}  */
 </style>
-</head>
 
 <body>
   <header>
@@ -994,19 +751,55 @@ outline: 0;
             
           </div>
         </div>
+        <nav class="menumain">
         <div class="menucntr">
             <ul class="lvl-1">
                 <li class="firstli"><a href="#">NEW ARRIVALS</a>
                     <div class="sub-menu">
                         <div class="col">
                             <div>
-                                <P>Clothing</P>
-                                <P>Curve</P>
-                                <P>Accessories</P>
-                                <P>Best Selling</P>
+                               <h5>CATEGORIES</h5>
+                              <a href="women1.html" > DRESSES</a>
+                                <P>T-SHIRTS AND TOPS</P>
+                                <P>SWEATERS AND SWEATSHIRTS</P>
+                                <P>JEANS AND DENIM</P>
+                                <P>SKIRTS</P>
+                                <P>PANTS</P>
+                                <P>JUMPSUITS AND OVERALLS</P>
+                                <P>JACKETS</P>
+                                <P>ACTIVEWEAR</P>
+                                <h5>VIEW ALL</h5>
                             </div>
-
-                            <img src="https://img.faballey.com/images/newindrpdnnv2.jpg">
+                            <div>
+                                <h5>DESIGNERS</h5>
+                                <P>BALENCIAGA</P>
+                                <P>DOLCE & GABBANA</P>
+                                <P>GUCCI</P>
+                                <P>MAISON MARGIELA</P>
+                                <P>MARNI</P>
+                                <P>OFF-WHITE™</P>
+                                <P>PRADA</P>
+                                <P>VALENTINO</P>
+                                <P>VERSACE</P>
+                                <P>8 BY YOOX</P>
+                                <h5>VIEW ALL DESIGNERS</h5>
+                            </div>
+                            <div>
+                            <h5>INSPIRATION</h5>
+                            <P>THE NEW STYLE GALLERY</P>
+                            <P>GET ACTIVE</P>
+                            <P>SOFT TOUCH</P>
+                            <P>INSPIRATION</P>
+                            <P>DENIM ON DENIM</P>
+                            <P>STUNNING SILK</P>
+                            <P>WHAT TO WEAR WITH TRAINERS</P>
+                            <P>YOOXYGEN SUSTAINABLE WEAR</P>
+                            <P>HI GUYZ</P>
+                            </div>
+                            <div>
+                            <img style="margin-top: 10px; width:300px; height:350px;"src="https://www.yoox.com/images/yoox80/banners/6824_1_Wedding_WM_Second.jpg?634485886869569819">
+                            <p style="text-align:center;">CELEBRATE LOVE IN STYLE</p>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -1021,15 +814,16 @@ outline: 0;
               
             </ul>
         </div>
+    </nav>
        </div> 
         
 
-    <div class=" thirdheader">
+    <!-- <div class=" thirdheader"> -->
         <!-- <div class="rose"><a>Spring Summer'22</a></div> -->
-        <div class="darkrose"><a>SEASONAL MUST-HAVES up to 65% OFF</a></div>
+        <!-- <div class="darkrose"><a>SEASONAL MUST-HAVES up to 65% OFF</a></div> -->
         <!-- <div><h4><u>FIND STYLISH ESSENTIALS HERE</u></h4></div> -->
         <!-- <div class="rose"><a> Free Shipping On All Orders</a></div> -->
-    </div>
+    <!-- </div> -->
 </header>
 
 <div id="Box">
@@ -1268,259 +1062,9 @@ outline: 0;
   <p>Load More</p>
      </div>
 
-<!-- <footer>
-  <div class="maincenter">
-      <div class="txtcenter">
-          <h1>
-              <span>ONLINE SHOPPING SITE FOR WOMEN’S FASHION - FABALLEY</span>
-          </h1>
-          <div class="ftrtext">
-              <div class="ftrtextscroll">
-                  <p>FabAlley.com is an online fashion store for taste-makers and trend-breakers all over the
-                      country.
-                      When it comes to online shopping for women looking for the latest fashion trends, FabAlley
-                      is
-                      the one-stop destination. Started in 2012, this online fashion store comprises of the
-                      trendiest
-                      tops, hottest dresses, skirts, jackets, shoes, bags, accessories and fashion jewellery for
-                      women
-                      online shopping. Every new season brings fresh and latest fashion for women. And it becomes
-                      important for you to keep up with the current trend. However, FabAlley has all your styling
-                      stress sussed!</p>
-
-                  <p>
-                      Going out for a stroll along the streets? Or getting ready for an important meeting at work?
-                      Or
-                      simply watching Netflix at home, cuddled up with your loved one in bed? Whatever plans you
-                      have,
-                      one common decision you should take in all these cases is what to wear. Women are generally
-                      very
-                      particular about their outfits and latest fashion trends. FabAlley, an online fashion store,
-                      houses a colossal collection of Tops, Dresses, Skirts, Bottoms, Shorts, Blazers and Jackets,
-                      all
-                      bang-on trend and in all sizes, from petite to plus-size.</p>
-
-                  <p>Going to a brick and mortar store and browsing your perfect outfit is very tedious and time
-                      consuming. It is physically impossible to check out all the latest fashion trends for women
-                      from
-                      various brands in the same day. In the fast-moving world, today, no one has this much time!
-                      This
-                      is one of the main reasons that Online Shopping for women is so popular these days. It’s
-                      much
-                      convenient, time-saving and offers a wider variety of surf too. It also lets you compare
-                      prices
-                      across different websites. From Instagram and Facebook to googling and scanning through
-                      several
-                      online fashion store India, the options for browsing are endless. FabAlley is one such
-                      online
-                      fashion store that is a one- stop shop for all your fashion needs, be it ethnic or western
-                      wear,
-                      bags or shoes. The best part being we provide the latest women online shopping trends.</p>
-
-                  <h2>Online Shopping for Women in India</h2>
-
-                  <p>Shopping is no longer an exhausting affair with women online shopping sites offering the
-                      accessibility of fuss-free shopping services, anytime and anywhere. With a larger than life
-                      repertoire to choose from, online shopping sites for women have made everyone’s life much
-                      easier
-                      and convenient. In this fast-paced world, Online Shopping is a boon. Be it branded or
-                      designer
-                      outfits, online shopping caters you the best of both. With services like cash on delivery,
-                      easy
-                      return, exchange & refund, these online stores are a fantastic platform that can create the
-                      best
-                      shopping experiences for people across the globe. Apart from providing the trendiest
-                      apparels
-                      and accessories, these online sites offer products at affordable prices without compromising
-                      on
-                      the quality of the item. Furthermore, services are available round the clock, no matter what
-                      time or day it is.</p>
-
-                  <h2>FABALLEY: One-Stop Fashion Shop</h2>
-
-                  <p>Who doesn’t want to stay trendy? Everyone does. Synonymous with chic and glamorous, Faballey
-                      is
-                      an exclusive fashion online shopping store for women who are rebellious and love quirky and
-                      unconventional styling. Featuring season’s most trending outfits and much-in-fame
-                      accessories in
-                      the realm of fashion, FabAlley is the best online store for people who loves to own
-                      ensembles
-                      that are sexy, hot, cool and fashionable. Tops, Dresses, Skirts, Pants or Denims to name a
-                      few,
-                      Faballey has everything to offer, under one single roof. FabAlley is all about redefining
-                      the
-                      fashion in the chicest way. At FabAlley, you will be spoiled for choice. There is something
-                      fun
-                      and dramatic for every fashion aficionado out there. To make shopping easy and convenient,
-                      Faballey provides various facilities through online payment, Door Step Delivery and Cash on
-                      Delivery. In case you do not like the purchased product or have any kind of size issues, you
-                      can
-                      easily avail our Return, Refund and Exchange facility. Customer satisfaction is our utmost
-                      priority. And to ensure that all the queries and issues are resolved at the earliest, we
-                      have a
-                      customer care team to assist our esteemed customers</p>
-
-                  <p>Going to a brick and mortar store and browsing your perfect outfit is very tedious and time
-                      consuming. It is physically impossible to check out all the latest fashion trends for women
-                      from
-                      various brands in the same day. In the fast-moving world, today, no one has this much time!
-                      This
-                      is one of the main reasons that Online Shopping for women is so popular these days. It’s
-                      much
-                      convenient, time-saving and offers a wider variety of surf too. It also lets you compare
-                      prices
-                      across different websites. From Instagram and Facebook to googling and scanning through
-                      several
-                      online fashion store India, the options for browsing are endless. FabAlley is one such
-                      online
-                      fashion store that is a one- stop shop for all your fashion needs, be it ethnic or western
-                      wear,
-                      bags or shoes. The best part being we provide the latest women online shopping trends.</p>
-
-                  <h2>
-                      BUY WOMEN WEAR ONLINE ON FABALLEY
-                  </h2>
-
-                  <p>Hello, Fashion devotees! It’s time for you to ride high on style with the most fashionable
-                      women’s clothing online store- FabAlley. Check out our stunning range of Dresses that are
-                      trending big time. Whether you’re looking for a Bodycon, Skater, A-line, Shift, Off Shoulder
-                      or Maxi Dresses, we have every type of dresses that is going to make you croon. For those
-                      who are inclined towards gothic and boho styling, we have Summer in Bohemia collection.
-                      Also, explore our vast array of sexy Tank Tops, stylish Shirts, hot blouses for girls,
-                      elegant Ruffled Tops, basics and many more. We are not just restricted to clothing, step up
-                      your fashion quotient with our cool range of accessories. From stylish Bags to beautiful
-                      Scarves, cool Sunglasses to cute Hair Accessories and swanky Jewelry, we unveil the best for
-                      you. In case you are a diehard fan of both ethnic and western styles, FabAlley have got you
-                      covered. Indya is exclusively for girls who loves to wear traditional and ethnic outfits
-                      with a dash of contemporary twist. Enjoy the best of Indo Western wear with FabAlley’s
-                      gorgeous collection of graceful Skirts, Peplums, Crop Tops for women, Tunics, Dresses,
-                      Palazzo et al. Apart from these amazing products, we also have a smart collection of Shoes
-                      for women, which consists of Peep-Toes, Flat Sandals, Lace-up Sandals, Strappy Flat Sandals,
-                      Block Heeled Sandals and Wedge Sandals. Choose yours!</p>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="maincenter">
-      <div class="googleplay">
-          <div>
-              <img src="https://img.faballey.com/images/membership-desktop.png" alt="">
-          </div>
-          <div>
-              <h2>DOWNLOAD THE APP</h2>
-              <div class="footerimg">
-                  <img src="https://static.faballey.com/images/glplay.png?v=11.8">
-                  <img src="https://static.faballey.com/images/appstore.png?v=11.8">
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="faballeycsr">
-      <div class="firstcom">
-          <div class="company">
-              <h2>COMPANY </h2>
-          </div>
-          <div class="companyone">
-              <P>About us </P>
-              <P>Carrers</P>
-              <P>Contact Us</P>
-              <P>FabAlley CSR</P>
-              <P>Our Blog</P>
-          </div>
-
-      </div>
-
-      <div class="help">
-          <div class="helpone">
-              <h2>HELP</h2>
-          </div>
-          <div class="havetwo">
-              <div class="helpone">
-                  <p>Order Status</p>
-                  <p>Returns & Exchange</p>
-                  <p>International Orders</p>
-                  <p>Terms And Conditions</p>
-                  <p>Privacy Policy</p>
-                  <p>Investor Relations</p>
-              </div>
-              <div class="helptwo">
-                  <p>FAQs</p>
-                  <p>Cancellation policy</p>
-                  <p>Shipping Policy</p>
-                  <p>Ordering & Payment</p>
-                  <p>Size Guide</p>
-                  <p>Store Locator</p>
-                  <p>Wholesale Enquiry</p>
-              </div>
-          </div>
-
-      </div>
-      <div class="newsletter">
-          <h2>NEWSLETTER SIGNUP</h2>
-          <div>
-              <input class="input" placeholder="ENTER EMAIL ADDRESS">
-              <button class="btn">SUBSCRIBE</button>
-          </div>
-          <div class="connecticon">
-              <h2>CONNECT WITH US</h2>
-              <div>icons</div>
-          </div>
-      </div>
-  </div>
-
-  <!--2nd last box >
-
-  <!-- <div class="threediv">
-      <div class="head">
-          <div>
-              <h2>IN CASE OF ANY CONCERN CONTACT US</h2>
-          </div>
-          <div class="insidehead">
-              <h2>HEAD OFFICE ADDRESS :</h2>
-              <P>
-                  High Street Essentials Pvt Ltd
-                  <br>
-                  C-11, Sector 7, Noida, UP- 201301, India
-                  <br>
-                  Customer Care: +91-8929987349 / 0120-6850262
-              </P>
-          </div>
-      </div>
-      <div class="return">
-          <h2>RETURN ADDRESS:</h2>
-          <P>High Street Essentials Pvt Ltd
-              <br>
-              C-5, Sector 1, Noida
-              <br>
-              UP- 201301, India
-          </P>
-      </div>
-      <div class="payment">
-          <h2>PAYMENT METHODS</h2>
-          <img src="https://static.faballey.com/images/patmentimg.png?v=11.8" alt="" srcset="">
-      </div>
-  </div>
-
-
-  <div class="secondlast">
-      <h3>POPULAR SEARCH :</h3>
-      <p>New Arrivals | Western Clothing | Tops | Dresses | Skirts | Bottoms | DenimJackets & Blazers | Shrugs |
-          Curve | Accessories | Sale | Party |<br>
-          WearWork | Wear | Vacation | WearCasual | WearCrop | TopsMaxi | TopsOff | Shoulder | TopsCold | Shoulder
-          | TopsRuffled |
-          TopsBell | Sleeve | TopsFloral <br>| TopsMaxi | DressesSkater | DressesMini |
-          DressesOff | Shoulder | DressesCold | Shoulder |
-          Dresses | Floral Dresses | LBD | Jumpsuits | Plus |Size | <br>DressesPlus |Size | TopsWinter |
-          WearLeggings | Jeggings | Women's
-          Loungewear | Wholesale Enquiries</p>
-  </div>
-
-  <div class="copyright">
-      <p>&#169;2022 FabAlley.com. All Rights Reserved</p>
-  </div>
-</footer>  -->
+<footer>
+  
+</footer>
 </body>
 
 </html>
