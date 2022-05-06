@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://kit.fontawesome.com/03120bbf35.js" crossorigin="anonymous"></script>
+<title>Tops</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+#Box {
+display: flex;
+margin-left: 8%;
+
+}
+.topmost {
+    height: 35px;
+    width: 100%;
+    border-bottom: 1px solid rgb(208, 207, 207);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    height: 36px;
+    background: #fff;
+    top: 0;
+    z-index: 99999;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.topmost2 {
+    height: 55px;
+    width: 100%;
+    margin-top:36px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    z-index: 99999;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+* {
+    box-sizing: border-box;
+    font-size: 11PX;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 36px;
+    color: #323232;
+    font-family: 'Lato',sans-serif;
+}
+
+.exleft {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    /* margin-left: 20px; */
+    /* padding: 0px 30px 0px 30px; */
+}
+.exleft2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+     /* margin-left: 20px; 
+     padding: 0px 30px 0px 30px;  */
+}
+
+
+.exright {
+    margin-right: 20px;
+}
+
+/* .exright2 {
+    margin-right: 20px;
+} */
+
+.inside {
+    height: 30px;
+    width: 300px;
+    display: block;
+    margin-bottom:5px ;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    /* border-right: 1px solid rgb(41, 38, 38); */
+
+}
+
+.inside2 {
+    height: 10px;
+    width: 300px;
+    display: block;
+    align-items: center; 
+    margin-bottom: 15px;
+    margin-top: -12px;
+     
+}
+
+.inside2 img {
+    height: 35px;
+    width: 100%;
+
+}
+
+.rightside {
+    text-align: center;
+    justify-content: space-around; 
+    display: flex;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.rightside2 {
+    text-align: center;
+    justify-content: space-around; 
+    display: flex;
+    width: 150px;
+    height: 30px;
+ } 
+
+.rightside div {
+
+    height: 16px;
+    padding-right: 5px;
+    text-align: center;
+    margin: auto;
+    word-spacing: 10px;
+}
+
+/* .rightside2 div {
+     border-right: 1px solid rgb(37, 36, 36); 
+    height: 16px;
+    padding-right: 5px;
+    text-align: center;
+    margin: auto;
+    word-spacing: 10px;
+} */
+
+.rightside div a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    
+     word-spacing: 10px; 
+}
+/* .rightside2 div a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: -10px;
+    word-spacing: 10px; 
+} */
+
+.rightside div:last-child {
+    border: none;
+    /* word-spacing: 10px; */
+}
+
+ /* .rightside2 div:last-child {
+    border: none;
+    word-spacing: 10px;
+} */
+
+
+
+
+
+/* second navbar */
+
+.topmost-2 {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 7px;
+}
+
+.hmiddle {
+    width: auto;
+    display: flex;
+    margin: 5px;
+}
+
+.hmiddle div {
+    /* border: 1px solid black; */
+    display: flex;
+    padding: 8px;
+    border-bottom: 4px solid transparent;
+    font-size: 11.5px;
+    line-height: 18px;
+
+}
+
+/* .headerbox {
+    margin-top: 90px;
+     padding: 60px 0 7px 0; 
+    background-color: black;
+} */
+
+
+
+
+.menucntr {
+    
+    background: rgb(0, 0, 0);
+    z-index: 2;
+    width: 100%;
+    top:0;
+    display: inline-block;
+    margin-left: 0%;
+
+    height: 35px;
+    width: 100%;
+    margin-top:90px;
+     margin-bottom: 5px;
+    justify-content: space-around;
+    /* align-items: center; */
+    position: fixed;
+    
+
+
+    
+}
+
+.hright {
+    max-width: 170px;
+    width: 100%;
+    margin-left: 15px;
+    float: left;
+    /* position: relative; */
+}
+
+.hright img {
+    max-width: 100%;
+    border: none;
+    display: block;
+}
+
+
+.hleft {
+    /* padding: 3px 7px;
+    font-size: 13px;
+    margin-right: 20px; */
+    float: right;
+    margin: 4px 15px 0 0;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* nav {
+    display: block;
+    background-color: black; 
+
+} */
+
+
+
+ul {
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+    display: inline-block;
+    margin-left: 18%;
+    position: relative;
+    margin-top: 0px;
+    /* padding-bottom: 50px; */
+    height: 35px;
+}
+
+.lvl-1>li {
+    float: left;
+    display: block;
+    list-style: none;
+}
+
+.lvl-1>li>a {
+    font-weight: 600;
+    display: inline-block;
+    font-size: 11.5px;
+    line-height: 10px;
+    overflow: visible;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* MEGA MENU  */
+
+
+.menucntr ul li .sub-menu {
+    position: absolute;
+    width: 100%;
+    /* border: 2px solid black; */
+    /* background-color: white; */
+    left: 0;
+    right: 0;
+    /* visibility: hidden; */
+}
+
+
+
+.menucntr ul li .sub-menu .col {
+    display: flex;
+    justify-content: space-around;
+  
+    width: 140.8%;
+    background-color: white;
+    margin-left: -20%;
+    visibility: hidden;
+
+}
+
+
+.menucntr ul li :hover .col {
+    visibility: visible;
+}
+
+
+.thirdheader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: -15px 0 0 0;
+}
+/* 
+.thirdheader a {
+    padding: 7px;
+    text-align: center;
+
+} */
+
+.thirdheader div {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    
+}
+
+/* .rose {
+    margin-top: 180px;
+    background-color: #ffe9e5;
+    font-family: 'lato',sans-serif;
+    font-size: 11px;
+} */
+
+.darkrose {
+    margin-top:140px;
+    background-color: #ce79ff96;
+    font-family: 'lato',sans-serif;
+    font-size: 16px;
+    width:100%;
+}
+</style>
+</head>
+
+<body>
+  <header>
+    <div class="top1"> 
+       <div class="topmost">
+          <div class="exleft">   
+           <div> <select class="country">
+                   <option ><u>UNITED STATES</u></option>
+                   <option ><u>UNITED KINGDOM</u></option>
+                   <option ><u>INDIA</u></option>
+                   <option ><u>AUSTRALIA</u></option>
+                   <option ><u>SPAIN</u></option>
+                   <option ><u>ITALY</u></option>
+                   <option ><u>DUBAI</u></option>
+                    </select> 
+              </div>
+             <div><u>CUSTOMER CARE</u></div>
+             <!-- <span style="color: black;">shop now></span> -->
+             </div>
+              <div class="inside"> FREE STANDARD SHIPPING ON ORDERS OVER $100  </div>
+             <div class="rightside">
+                   <!-- <div><a>Track Order</a></div> -->
+                   <div><a><i class="fa-solid fa-pencil"></i><u>Register</u></a></div>
+                   <div class="login"><a href="login.html"><i class="fa-solid fa-unlock"></i><u>Login</u></a></div>
+                   <!-- <div><a href="singup.html">Sign Up</a></div> -->
+                    <!-- <div></div> -->
+            </div>
+
+
+       </div>
+     
+      <div class="topmost2">
+        <div class="exleft2">
+            <div>WOMEN</div>
+            <div>MEN</div>
+            <div>KIDS</div>
+            <div>DESIGN + ART</div>
+             </div>
+        <div class="inside2"> <img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></div>
+           
+           
+           <div class="rightside2">
+            <div><i class="fa-solid fa-magnifying-glass"></i></div>
+             <div><i class="fa-regular fa-heart"></i></div>
+            <div><i class="fa-regular fa-bag-shopping"></i></div>
+            
+            
+          </div>
+        </div>
+        <div class="menucntr">
+            <ul class="lvl-1">
+                <li class="firstli"><a href="#">NEW ARRIVALS</a>
+                    <div class="sub-menu">
+                        <div class="col">
+                            <div>
+                                <P>Clothing</P>
+                                <P>Curve</P>
+                                <P>Accessories</P>
+                                <P>Best Selling</P>
+                            </div>
+
+                            <img src="https://img.faballey.com/images/newindrpdnnv2.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li ><a href="#">DESIGNERS</a></li>
+                <li ><a href="Clothing.html" >CLOTHING</a></li>
+                <li><a href="Shoes.html">SHOES</a></li>
+                <li><a href="Dresses.html">ACESSORIES & BAGS</a></li>
+                <li><a href="#">8 BY YOOX</a></li>
+                <li><a href="#">YOOXYGEN</a></li>
+                <li><a href="#">COLLABORATIONS</a></li>
+                <li><a href="#">BEST DEALS</a></li>
+              
+            </ul>
+        </div>
+       </div> 
+        
+
+    <div class=" thirdheader">
+        <!-- <div class="rose"><a>Spring Summer'22</a></div> -->
+        <div class="darkrose"><a>SEASONAL MUST-HAVES up to 65% OFF</a></div>
+        <!-- <div><h4><u>FIND STYLISH ESSENTIALS HERE</u></h4></div> -->
+        <!-- <div class="rose"><a> Free Shipping On All Orders</a></div> -->
+    </div>
+</header>
