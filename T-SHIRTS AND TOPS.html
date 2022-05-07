@@ -409,9 +409,12 @@
     visibility: hidden;
 
 }
-.menucntr > ul >li >.sub-menu >.col > div {
+.menucntr > ul > .firstli >.sub-menu >.col > div {
     gap:10px;
 
+}
+.menucntr > .lvl-1 > .firstli > .sub-menu > .col > .div > a {
+    text-decoration: none;
 }
 
 .menucntr ul li :hover .col {
@@ -664,7 +667,7 @@ margin-bottom: 40px;
 padding: 10px 10px 10px 10px;
 }
 
-.bottom p{
+.bottom > p{
   font-family: 'Montserrat',sans-serif;
   font-weight: 700;
   color: #000000;
@@ -685,9 +688,11 @@ margin-top: 100px;
 
 
 }
-#container div{
+
+
+#container > div {
 /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-/* border: 1px solid red; */
+
 margin: 0;
 margin-right: 5px;
 height: 450px;
@@ -712,11 +717,14 @@ font-weight: 700;
 cursor:pointer;
 }
 
+
 #container > div > button :hover {
+
 color:#ffffff;
 background-color: black;
 
 }
+
 
 #container div+div {
 list-style: none;
@@ -724,7 +732,8 @@ flex: 0 0 0 32%;
 margin-bottom: 20px;
 }
 
-#container>div>p {
+
+#container > div > p {
 cursor: pointer;
 /* font-size:13.28px; */
 font-weight:700;
@@ -737,10 +746,12 @@ font-weight: 500;
 /* float:right; */
 }
 
+
 #container > div > img {
     height: 272px;
     width: 210px;
 }
+
 </style>
 
 <body>
@@ -790,7 +801,7 @@ font-weight: 500;
             <div><i class="fa-solid fa-magnifying-glass"></i></div>
              <div><i class="fa-regular fa-heart"></i></div>
             <div><i class="fa-regular fa-bag-shopping"></i></div>
-            
+           
             
           </div>
         </div>
