@@ -11,11 +11,7 @@
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Corinthia&family=Montserrat:wght@500;700&family=Poppins&display=swap");
 
-#Box {
-display: flex;
-margin-left: 8%;
-
-}
+/* ------------------------------------------------------------------------Header----------------------------------------- */
 .topmost {
     height: 35px;
     width: 100%;
@@ -42,6 +38,23 @@ margin-left: 8%;
     align-items: center;
     position: fixed;
     background: #fff;
+    top: 0;
+    z-index: 99999;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.topmost3 {
+    height: 35px;
+    width: 100%;
+    margin-top:300px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    background: #fff;
+    border-bottom: 4px solid rgb(236, 236, 236);
+    border-width: 50%;
     top: 0;
     z-index: 99999;
     padding-left: 100px;
@@ -83,6 +96,18 @@ margin-left: 8%;
      /* margin-left: 20px; 
      padding: 0px 30px 0px 30px;  */
 }
+
+.exleft3 {
+    cursor: pointer;
+    color: #b9b9b9;
+    font-weight:700;
+    font-family: 'Montserrat',sans-serif;
+    text-align: left;
+    margin-left: -9%;
+     /* margin-left: 20px; 
+     padding: 0px 30px 0px 30px;  */
+}
+
 .exleft2 :hover {
     border-bottom: 4px solid yellow;
 }
@@ -126,6 +151,19 @@ margin-left: 8%;
     font-weight: 700;
      
 }
+.inside3 {
+    height: 10px;
+    width: 300px;
+    display: block;
+    align-items: center; 
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: -12px;
+    margin-left: 22%;
+    cursor:pointer;
+    font-weight: 700;
+     
+}
 
 .inside2 img {
     height: 35px;
@@ -152,6 +190,18 @@ margin-left: 8%;
     width: 150px;
     height: 30px;
     cursor:pointer;
+    
+
+ } 
+ .rightside3 {
+    text-align: center;
+    justify-content: space-between; 
+    display: flex;
+    width: 150px;
+    gap: 10px;
+    height: 30px;
+    cursor:pointer;
+    /* margin-left: 20%; */
     
 
  } 
@@ -238,7 +288,7 @@ margin-left: 8%;
 } */
 
 
-
+/* ---------------------------------------------------Navbar and DropDown Menu---------------------------------- */
 
 .menucntr {
     
@@ -255,11 +305,7 @@ margin-left: 8%;
      margin-bottom: 5px;
     justify-content: space-around;
     /* align-items: center; */
-    position: fixed;
-    
-
-
-    
+    position: fixed;  
 }
 
 /* .hright {
@@ -339,7 +385,7 @@ margin-left: 8%;
 }
 
 
-/* MEGA MENU  */
+
 
 
 .menucntr > ul > li > .sub-menu {
@@ -392,6 +438,45 @@ margin-left: 8%;
     font-size: 11px;
     font-family: 'Montserrat',sans-serif;
 }
+
+
+.option {
+    margin-top: 120px;
+    text-align: center;
+    margin-left: 8%;
+}
+
+.description {
+    max-width: 60%;
+    margin-left: 24%;
+}
+.description > h2{
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.description > p{
+    text-align: center;
+
+}
+
+/* -------------------------------------------PageBody---------------------------------------------------------- */
+
+#BigBox > .topmost3 {
+    max-width: 87%;
+    margin-left: 8%;
+   
+} 
+
+#Box {
+display: flex;
+margin-left: 8%;
+
+}
+
+/* ----------------------------------------------------------Page Description and sort -------------------------------------- */
+
 .thirdheader {
     display: flex;
     justify-content: space-around;
@@ -436,6 +521,10 @@ hr {
     color: #333;
 }
 
+
+/* --------------------------------------------------------- SideBar------------------------------ */
+
+
 #search {
     font-weight: 600;
     font-size: 14px;
@@ -449,7 +538,7 @@ hr {
     display: block;
     width: 100%;
     height: 20%;
-    margin: 2% 5% 5% 0%;
+    margin: 0% 5% 5% 0%;
 }
 
 #vi {
@@ -469,7 +558,7 @@ hr {
 }
 
 #getInsp {
-    background-color: rgb(207, 205, 205);
+    background-color: rgb(223, 223, 223);
     text-align: center;
     color: #333;
     font-weight: bold;
@@ -495,7 +584,7 @@ hr {
 #leftPanels {
     width: 25%;
     height: auto;
-    margin-top: 200px;
+    margin-top: 95px;
     /* border: 2px solid red; */
 }
 
@@ -524,7 +613,7 @@ hr {
 .accordion .contentBx .label {
     position: relative;
     padding: 10px;
-    background: #dbdedf;
+    background:rgb(223, 223, 223);
     font-weight: bold;
     color: #333;
     cursor: pointer;
@@ -562,6 +651,8 @@ hr {
 }
 
 
+
+/* --------------------------------------------------- MainContent--------------------------------------------- */
 .bottom{
 height: 50px;
 text-align: center;
@@ -589,7 +680,7 @@ padding-left: 50px;
 float: right;
 width: 70%;
 justify-content: space-around;
-margin-top: 200px;
+margin-top: 100px;
 
 
 
@@ -623,7 +714,7 @@ font-weight: 700;
 #container div+div {
 list-style: none;
 flex: 0 0 0 32%;
-margin-bottom: 40px;
+margin-bottom: 20px;
 }
 
 #container>div>p {
@@ -646,6 +737,8 @@ font-weight: 500;
 </style>
 
 <body>
+
+    <!-- -------------------------------------------header------------------------------------- -->
   <header>
     <div class="top1"> 
        <div class="topmost">
@@ -658,6 +751,7 @@ font-weight: 500;
                    <option ><u>SPAIN</u></option>
                    <option ><u>ITALY</u></option>
                    <option ><u>DUBAI</u></option>
+                   <option ><u>...</u></option>
                     </select> 
               </div>
              <div><u>CUSTOMER CARE</u></div>
@@ -758,25 +852,51 @@ font-weight: 500;
         </div>
     </nav>
 
-    <div class="option"></div>
-    <div class="description"></div>
-    <div class="topmost3">
-        <div></div>
-        <div></div>
+    <div class="option"> <a href="/layouts/women.html">HOME / WOMEN </a> / CLOTHING </div>
+    <div class="description">  <h2> CLOTHING </h2> 
+        <p>In the mood for something new? Your style update starts now. Explore everything you need to wake up your wardrobe and give your look an instant refresh: from shirts, jackets, and pants for a chic daywear look, through sportswear and casual overalls, to evening-ready jumpsuits, elegant skirts, and topwear.</p>
+
     </div>
-       </div> 
+   
+        
         
 
    
 </header>
 
-<div id="Box">
 
+<div id= "BigBox"> 
+<div class="topmost3">
+    <div class="exleft3">  SAVE SEARCH</div>
+        <div class="inside3"> 25000+ items </div>
+
+       <div class="rightside3">
+           <div> <select class="Sort1">
+            <option><u>SORT BY</u></option>
+            <option ><u>LATEST</u></option>
+            <option ><u>HIGHEST PRICE</u></option>
+            <option ><u>LOWEST PRICE</u></option>
+            </select> 
+       </div>
+       <div><select class="Sort2">
+            <option ><u>1</u></option>
+            <option ><u>2</u></option>
+            <option ><u>...</u></option>
+            <option ><u>191</u></option>
+            </select> 
+       </div>
+            
+      </div>
+
+
+ </div>
+<div id="Box">
+  <!-- ----------------------------SideBar--------------------------------------- -->
     <div id="leftPanels">
 
         <div id="vi">
             <video playsinline="" muted="" autoplay="" loop="" class="yVideo" src="https://secure.social.yoox.it/yspecial/8BYYOOX/SS22/video_coreo.mp4?v=001" poster=""></video>
-        <!-- <video muted="" autoplay="" loop="" poster="" class="y-intro__video" src="https://secure.social.yoox.it/yspecial/merch/wedding/apr-2022/video/main.mp4?v=01"></video> -->
+        
             <div id="getInsp">
                 <p class="headtail"> ESSENTIAL POP </p>
                 <P> The new SS22 collection from 8 by YOOX</P>
@@ -784,7 +904,7 @@ font-weight: 500;
             </div>
         </div>
 
-         <!-- Accordion menu -->
+    
        <div id="optionTwoAccordion">
          <div class="accordion">
           <div class="contentBx">
@@ -1023,13 +1143,17 @@ font-weight: 500;
    <img src="https://www.yoox.com/images/yoox80/banners/6939_2_teleyoox_DM_ROW.png?634485886601286852"/>
 </div>
 </div>
+<!-- ----------MainContent------------- -->
 
 <div id="container">
+</div>
 </div>
 </div>
 <div class="bottom">
   <p>Load More</p>
      </div>
+
+     <!-- -------------------------------Footer------------------------------ -->
 
 <footer>
   
@@ -1037,6 +1161,8 @@ font-weight: 500;
 </body>
 
 </html>
+
+
 <script>
 
 const accordion = document.getElementsByClassName("contentBx");
