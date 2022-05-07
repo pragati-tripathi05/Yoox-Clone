@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    YOOX
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="cart-style/cart.css">
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+</head>
+<body>
+<!-- Headers strt -->
+<header>
+  <div class="top1"> 
+     <div class="topmost">
+        <div class="exleft">   
+         <div> <select class="country">
+                 <option ><u>UNITED STATES</u></option>
+                 <option ><u>UNITED KINGDOM</u></option>
+                 <option ><u>INDIA</u></option>
+                 <option ><u>AUSTRALIA</u></option>
+                 <option ><u>SPAIN</u></option>
+                 <option ><u>ITALY</u></option>
+                 <option ><u>DUBAI</u></option>
+                  </select> 
+            </div>
+           <div><u>CUSTOMER CARE</u></div>
+           <!-- <span style="color: black;">shop now></span> -->
+           </div>
+            <div class="inside"> FREE STANDARD SHIPPING ON ORDERS OVER $100  </div>
+           <div class="rightside">
+                 <!-- <div><a>Track Order</a></div> -->
+                 <div><a><i class="fa-solid fa-pencil"></i><u>Register</u></a></div>
+                 <div class="login"><a href="login.html"><i class="fa-solid fa-unlock"></i><u>Login</u></a></div>
+                 <!-- <div><a href="singup.html">Sign Up</a></div> -->
+                  <!-- <div></div> -->
+          </div>
+
+
+     </div>
+   
+    <div class="topmost2">
+      <div class="exleft2">
+          <div>WOMEN</div>
+          <div>MEN</div>
+          <div>KIDS</div>
+          <div>DESIGN + ART</div>
+           </div>
+      <div class="inside2"> <img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></div>
+         
+         
+         <div class="rightside2">
+          <div><i class="fa-solid fa-magnifying-glass"></i></div>
+           <div><i class="fa-regular fa-heart"></i></div>
+          <div><i class="fa-regular fa-bag-shopping"></i></div>
+          
+          
+        </div>
+      </div>
+      <div class="menucntr">
+          <ul class="lvl-1">
+              <li class="firstli"><a href="#">NEW ARRIVALS</a>
+                  <div class="sub-menu">
+                      <div class="col">
+                          <div>
+                              <P>Clothing</P>
+                              <P>Curve</P>
+                              <P>Accessories</P>
+                              <P>Best Selling</P>
+                          </div>
+
+                          <img src="https://img.faballey.com/images/newindrpdnnv2.jpg">
+                      </div>
+                  </div>
+              </li>
+              <li ><a href="#">DESIGNERS</a></li>
+              <li ><a href="Clothing.html" >CLOTHING</a></li>
+              <li><a href="Shoes.html">SHOES</a></li>
+              <li><a href="Dresses.html">ACESSORIES & BAGS</a></li>
+              <li><a href="#">8 BY YOOX</a></li>
+              <li><a href="#">YOOXYGEN</a></li>
+              <li><a href="#">COLLABORATIONS</a></li>
+              <li><a href="#">BEST DEALS</a></li>
+            
+          </ul>
+      </div>
+     </div> 
+      
+
+  <div class=" thirdheader">
+      <!-- <div class="rose"><a>Spring Summer'22</a></div> -->
+      <div class="darkrose"><a>SEASONAL MUST-HAVES up to 65% OFF</a></div>
+      <!-- <div><h4><u>FIND STYLISH ESSENTIALS HERE</u></h4></div> -->
+      <!-- <div class="rose"><a> Free Shipping On All Orders</a></div> -->
+  </div>
+</header>
+
+<!-- Headere -->
+
+
+
+
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+    <center><h2 style=" text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      text-decoration-color: grey;
+      color:yellow;
+     border-bottom:solid;
+      line-height:0.9em;
+      width:max-content;">SHOPPING BAG</h2></center>
+    <p><p></p></p>
+    <div id="sec-1">
+        <h3><a href="#">BACK TO SHOPPING</a></h3>
+       <h3> <button onclick="chekout()">Procede With Your Order &nbsp; ></button></h3>
+    </div>
+    <hr>
+  <div id="product">
+      <h4> <span id="length">1</span> | ITEMS ADDED TO YOU BAG (<span id="length1">1</span>)</h4>
+      <p></p>
+      <div id="items">
+          <!-- items Append Here.. -->
+      </div>
+      <div id="gift">
+         <h4 id="gift-add"><input type="checkbox" onclick=" gift()"> &nbsp; Buying A Gift ?</h4>
+      </div>
+     <hr>
+     <h4> 2 | Select shipping method</h4>
+     <p></p>
+     <div id="payment">
+        <span><input type="radio"> &nbsp; Express- us$ 26,00</span>
+       <p style="margin-left: 20px;">3 6 Bussiness Day</p>
+       <p>Business days are Monday through Friday, not including holidays. Orders are shipped from Italy. Click here to see the days on which we do not ship.</p>
+     </div> 
+     <div id="eco-1">
+         <div id="ecobox">
+            <div> <p style="color: green;">ECOBOX</p>
+                YOOX’s packaging is made entirely from recyclable materials and is internationally certified by RESY, FSC, PEFC and SFI for environmental, social and economic sustainability
+             </div>             
+              <div><span> <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw-Pvm47_WJyQM8dhIdE65Ur_c_bdQ04-OxyfZgG3e7Wplezj7" id="eco-img"></span></div>
+         </div>
+        
+     </div> 
+<p></p>
+<!-- Collaps tab strt -->
+<div class="container">
+    <div class="panel-group">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse1"><h3>YOOXCODE</h3></a>
+            Use your personal YOOXCODE to access exclusive promotions
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <ul class="list-group">
+            <li class="list-group-item"><input type="text" placeholder="Enter Your Code">&nbsp; <button>APPLY</button></li>
+           
+          </ul>
+          <div class="panel-footer">
+            APPLY
+            You may need to log in for the YOOXCODE to work and it might not be applicable to certain items (hide details)
+        <p>The following are excluded: Art, items labeled NEW, Fornasetti, Richard Ginori, and Montblanc.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<p></p>
+<!-- Collaps end -->
+<div id="product-details-1">
+
+    <h4>Total For Items</h4>
+    <h4>US$8787</h4>
+</div>
+<div id="product-details-2">
+
+    <h4>Local Taxes and Duties</h4>
+    <h4>US$8787</h4>
+    
+</div>
+<div id="product-details-3">
+
+    <h4>SHIPPING</h4>
+    <h4>US$8787</h4>
+</div>
+<div id="product-details-4">
+
+    <h4>PAYMENT</h4>
+    <h4>Free</h4>
+</div>
+<hr>
+<div id="product-details-5">
+
+    <h4>Order Total</h4>
+    <h4 id="total_p">$656</h4>
+</div>
+<hr style="border:2px solid black;">
+SUMMARY OF THE MAIN TERMS AND CONDITIONS OF SALE    
+<div id="detals-text">
+    <h6>The products available on this website are directly sold by YOOX NET-A-PORTER GROUP S.p.A. (“YOOX” or the “Vendor”), company subject to the management and coordination of Compagnie Financière Richemont S.A., with its registered office in Italy, Via Morimondo, 17 - 20143 Milano. For further information, please visit the Customer Care Area. You will find information about purchases, shipping, refunds and returning products purchased on the website. Remember that, even after your purchase, you may contact YOOX at any time using the online contact form or by telephone, when available, using the</h6>
+</div>
+<p></p>
+<div id="summary">
+<a href="/">Back to Shopping</a>
+<button onclick="chekout()" style="padding: 2px 15px 2px 15px; background-color: black; color: white;">Procee with Order</button>
+</div>
+
+<p><p><br><br><br><br><br>
+
+<h4>Customer Care</h4>
+<h5>If you have any questions you can send us an e-mail (Mon-Fri, 9am to 9pm Sydney Time)
+</h5>
+</div> <!-- Product Div-->
+
+
+</div> <!-- container --> 
+ </div> <!-- mani Div-->   
+</body>
+</html>
+
+<script src="cart-script/cat.js"></script>
+
