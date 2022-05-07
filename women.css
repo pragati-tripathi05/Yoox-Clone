@@ -1,0 +1,148 @@
+body{
+    font-family: Montserrat;
+    background-color: #f3f3f3;
+}
+
+
+/*top black navigation bar*/
+#navigation{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Montserrat;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+ul{
+    display: flex;
+    text-align: center;
+    margin-left: 15%;
+}
+li {
+    cursor: pointer;
+    height: 16px;
+    padding: 4px 6px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+li:hover{
+    color: rgb(156, 146, 146);
+}
+
+/* #yellow{
+    background-color: #f1a914;
+    text-align: center;
+    font-family: Montserrat;
+    height: 100px;
+}
+#off{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 200px;
+    color: black;
+}
+#sub{
+    font-size: 12px;
+    color: rgb(109, 108, 108);
+} */
+
+
+
+
+/*main content*/
+
+/*images in full width of screen- topmost and last*/
+.fullwidth{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+#secondrow{
+    margin-top: 15%;
+    width: 75%;
+    /* border: 1px solid red; */
+    margin-left: 10%;
+    display: flex;
+}
+
+#designers{
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    padding: 2%;
+}
+#names{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4%;
+}
+#names li{
+   font-weight: bold;
+   line-height: 70px;
+}
+
+
+#headings{
+    margin-top: 10%;
+    height: 140px;
+    text-align: center;
+}
+#newarrival{
+    font-size: 30px;
+    color: #333;
+}
+.viewall{
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.viewall:hover{
+    color: rgb(179, 176, 176);
+    cursor: pointer;
+}
+
+#threecards{
+    /* border: 1px solid teal; */
+    margin-top: 25%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin: auto;
+    gap: 20px;
+}
+
+
+#sectionfour{
+    background-color: white;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 120%;
+    display: flex;
+    margin-top: 8%;
+}
+/* #sectionfour div{
+    width: 25%;
+} */
+#sectionfour img{
+    width: 100%;
+    margin-right: 10%;
+    height: 80%;
+    margin-top: 10%;
+}
+
+#peopledance{
+    margin-top: 15%;
+    width: 75%;
+    /* border: 1px solid red; */
+    margin-left: 10%;
+    margin-bottom: 8%;
+}
