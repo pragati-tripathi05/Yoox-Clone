@@ -1,3 +1,43 @@
+let downArrivals = document.getElementById("dropArrivals")
+let dropDesigners = document.getElementById("dropDesigners")
+let dropClothing = document.getElementById("dropClothing")
+let dropShoes = document.getElementById("dropShoes")
+let dropBags = document.getElementById("dropBags")
+let dropYoox = document.getElementById("dropYoox")
+let dropYooxygen = document.getElementById("dropYooxygen")
+let dropCollaborations = document.getElementById("dropCollaborations")
+let dropOffers = document.getElementById("dropOffers")
+
+function newArrivals() {
+    downArrivals.classList.toggle("show")
+}
+function Designers() {
+    dropDesigners.classList.toggle("show")
+}
+function Clothing() {
+    dropClothing.classList.toggle("show")
+}
+function Shoes() {
+    dropShoes.classList.toggle("show")
+}
+function Bags() {
+    dropBags.classList.toggle("show")
+}
+function Yoox() {
+    dropYoox.classList.toggle("show")
+}
+function Yooxygen() {
+    dropYooxygen.classList.toggle("show")
+}
+function Collaborations() {
+    dropCollaborations.classList.toggle("show")
+}
+function Offers() {
+    dropOffers.classList.toggle("show")
+}
+
+
+
 var data = [
     {
         img: "https://www.yoox.com/images/items/12/12701727HA_14_f.jpg?impolicy=crop&width=306&height=390",
@@ -92,6 +132,7 @@ data.forEach((el) => {
     price.setAttribute("class", "price");
 
     img.src = el.img;
+    img.height="250px"
     name.innerText = el.name;
     type.innerText = el.type;
     strikedprice.innerText = el.strikedprice;
@@ -202,6 +243,7 @@ data1.forEach((ele) => {
 
 
     img1.src = ele.img;
+    img1.height="250px"
     name1.innerText = ele.name;
     type1.innerText = ele.type;
     strikedprice1.innerText = ele.strikedprice;
@@ -250,7 +292,7 @@ data2.forEach((el) => {
     let name = document.createElement("h3");
     let type = document.createElement("p");
     let div = document.createElement("div");
-    div.setAttribute("class", "div")
+    div.setAttribute("class", "division")
     let strikedprice = document.createElement("p");
     strikedprice.setAttribute("class", "line")
     let discount = document.createElement("p");
@@ -262,6 +304,7 @@ data2.forEach((el) => {
     discount.setAttribute("class","back");
 
     img.src = el.img;
+    img.height="250px"
     name.innerText = el.name;
     type.innerText = el.type;
     strikedprice.innerText = el.strikedprice;

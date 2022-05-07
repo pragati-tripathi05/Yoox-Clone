@@ -217,3 +217,376 @@
     border: 1px solid white;
     background-image: url("https://www.yoox.com/images/yoox80/banners/6821_1_Spring_Main_K.jpg?634485886601286852#width=1380&height=637");
 }
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=Montserrat:wght@500;700&family=Poppins&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    color: #333333;
+}
+
+#header {
+    width: 100vw;
+    height: 38px;
+    background-color: #333333;
+    margin-top: 91px;
+}
+
+#strip {
+    width: 57%;
+    height: 100%;
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.options {
+    color: white;
+    background-color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    margin: auto;
+}
+
+.NewArrivals {
+    width: 100%;
+    background-color: white;
+}
+
+.dropdown {
+    display: flex;
+    width: 68%;
+    /* border: 1px solid black; */
+    margin: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.dropleft {
+    /* border: 1px solid black; */
+    padding-left: 23px;
+    padding-right: 25px;
+    padding-top: 15px;
+    background-color: #f3f3f3;
+    height: auto;
+}
+
+.loption {
+    font-size: 11px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-top: 14px;
+    width: 135px;
+    margin-bottom: 0px;
+    color: #333333;
+}
+
+.dark {
+    font-size: 11px;
+    font-weight: 900;
+    border-bottom: 1px solid #d2d0d0;
+    padding-bottom: 20px;
+}
+
+.dropright {
+    display: flex;
+    /* border: 1px solid black; */
+    margin-left: 27px;
+    margin-top: 25px;
+}
+
+/* .imgbox {
+border: 1px solid black;
+}  */
+.imgbox>img {
+    width: 183.5px;
+    height: 233.3px;
+    margin-bottom: 5px;
+}
+
+.name,
+.price {
+    font-size: 11px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.sd {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 70%;
+    /* margin-left: 20px; */
+    /* border: 1px solid rgb(179, 176, 176); */
+}
+
+.brand,
+.discount,
+.size {
+    font-size: 11px;
+    text-align: center;
+}
+
+.strikedoff {
+    text-decoration-line: line-through;
+    font-size: 11px;
+    color: #a09c9c;
+    text-align: center;
+}
+
+/* Design */
+.cat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.designfooter {
+    border-top: 1px solid #d2d0d0;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.Designdropleft {
+    /* border: 1px solid black; */
+    width: 35%;
+    padding-left: 23px;
+    padding-right: 25px;
+    padding-top: 15px;
+    background-color: #f3f3f3;
+    height: auto;
+}
+
+.headDesigners {
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.ring {
+    margin-left: 25px;
+    width: 169px;
+}
+
+/* -------------------------------clothing------------------------- */
+.bold {
+    font-weight: 900;
+}
+
+.dropmiddle {
+    padding-left: 23px;
+    padding-right: 25px;
+    padding-top: 15px;
+    height: auto;
+}
+
+.clothingimg {
+    width: 100%;
+    height: auto;
+}
+
+.pad {
+    padding-bottom: 50px;
+}
+
+.padleft {
+    padding-left: 20px;
+}
+
+.padbottom {
+    padding-bottom: 250px;
+}
+
+.padmed {
+    padding-bottom: 120px;
+}
+
+.padbot {
+    padding-bottom: 200px;
+}
+
+.rbottom {
+    padding-top: 10px;
+}
+
+.ring1 {
+    margin-left: 25px;
+    width: 320px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#dropArrivals {
+    z-index: 1;
+}
+body{
+    width: 80%;
+    margin: auto;
+}
+#headone{
+    display: flex;
+    justify-content: space-between;
+}
+#left, #right{
+    display: flex;
+    margin-right: 10%;
+}
+.img{
+    margin-left: 35%;
+    height: 2%;
+    width: 10%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    
+    #Box {
+    display: flex;
+    margin-left: 8%;
+    
+    }
+    .topmost {
+        height: 35px;
+        width: 100%;
+        border-bottom: 1px solid rgb(208, 207, 207);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        height: 36px;
+        background: #fff;
+        top: 0;
+        z-index: 99999;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .topmost2 {
+        height: 55px;
+        width: 100%;
+        margin-top:36px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        background: #fff;
+        top: 0;
+        z-index: 99999;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    * {
+        box-sizing: border-box;
+        font-size: 11PX;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        line-height: 36px;
+        color: #323232;
+        font-family: 'Lato',sans-serif;
+        background-color: white;
+    }
+    
+    .exleft {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        cursor:pointer;
+        background-color: white;
+        /* margin-left: 20px; */
+        /* padding: 0px 30px 0px 30px; */
+    }
+    
+    
+    .exleft2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        cursor: pointer;
+        background-color: white;
+         /* margin-left: 20px; 
+         padding: 0px 30px 0px 30px;  */
+    }
+    
+    
+    
+    
+    .exright {
+        margin-right: 20px;
+        cursor:pointer;
+        background-color: white;
+    }
+    
+    /* .exright2 {
+        margin-right: 20px;
+    } */
+    
+    .inside {
+        height: 30px;
+        width: 300px;
+        display: block;
+        background-color: white;
+        margin-bottom:5px ;
+        cursor:pointer;
+        /* align-items: center; */
+        /* justify-content: space-around; */
+        /* border-right: 1px solid rgb(41, 38, 38); */
+    
+    }
+    
+    .inside2 {
+        height: 10px;
+        width: 300px;
+        display: block;
+        align-items: center; 
+        margin-bottom: 15px;
+        margin-top: -12px;
+        cursor:pointer;
+        background-color: white;
+         
+    }
+    
+    .inside2 img {
+        height: 35px;
+        width: 100%;
+        background-color: white;
+    
+    }
+    
+    .rightside {
+        text-align: center;
+        justify-content: space-around; 
+        display: flex;
+        width: 150px;
+        height: 30px;
+        margin-bottom: 20px;
+        cursor:pointer;
+        background-color: white;
+    }
+    
+    .rightside2 {
+        text-align: center;
+        justify-content: space-around; 
+        display: flex;
+        width: 150px;
+        height: 30px;
+        cursor:pointer;
+        background-color: white;
+     } 

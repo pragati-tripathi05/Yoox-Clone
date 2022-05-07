@@ -1,3 +1,44 @@
+let downArrivals = document.getElementById("dropArrivals")
+let dropDesigners = document.getElementById("dropDesigners")
+let dropClothing = document.getElementById("dropClothing")
+let dropShoes = document.getElementById("dropShoes")
+let dropBags = document.getElementById("dropBags")
+let dropYoox = document.getElementById("dropYoox")
+let dropYooxygen = document.getElementById("dropYooxygen")
+let dropCollaborations = document.getElementById("dropCollaborations")
+let dropOffers = document.getElementById("dropOffers")
+
+function newArrivals() {
+    downArrivals.classList.toggle("show")
+}
+function Designers() {
+    dropDesigners.classList.toggle("show")
+}
+function Clothing() {
+    dropClothing.classList.toggle("show")
+}
+function Shoes() {
+    dropShoes.classList.toggle("show")
+}
+function Bags() {
+    dropBags.classList.toggle("show")
+}
+function Yoox() {
+    dropYoox.classList.toggle("show")
+}
+function Yooxygen() {
+    dropYooxygen.classList.toggle("show")
+}
+function Collaborations() {
+    dropCollaborations.classList.toggle("show")
+}
+function Offers() {
+    dropOffers.classList.toggle("show")
+}
+
+
+
+var cartProducts = JSON.parse(localStorage.getItem("cartData")) || [];
 var shop = [
     {
         image_url:
@@ -1428,7 +1469,7 @@ shop.forEach((el) => {
     name.setAttribute("class","back");
     brand.setAttribute("class","back");
    type.setAttribute("class","back")
-   img.setAttribute("class","img")
+   img.setAttribute("class","imga")
     let price = document.createElement("p");
     price.setAttribute("class", "price");
 let box1=document.createElement("div");
@@ -1449,13 +1490,30 @@ box3.src="https://www.yoox.com/media/yoox16/searchresult/addtodb/add-to-dreambox
 box4.src="https://www.yoox.com/media/yoox14/sections/sr/badge/badge_new_2018n.png"
 img.src = el.image_url;
 
+
+var btn = document.createElement("button");
+btn.innerText = "Add to Cart";
+btn.addEventListener("click", function () {
+    addToCart(el);
+    window.location.reload();
+});
+
+
+
+
     name.innerText = el.name;
     brand.innerText = el.brand;
    type.innerText=el.type
     price.innerText = el.price;
 box1.append(box2,box3,box4)
-    box.append(img,box1,hr,brand, name,type, price);
+    box.append(img,box1,hr,brand, name,type, price,btn);
     container.append(box);
 
 })
 
+function addToCart(elem) {
+    console.log(elem);
+    cartProducts.push(elem);
+    localStorage.setItem("cartData", JSON.stringify(cartProducts));
+    alert("item added to cart");
+}
