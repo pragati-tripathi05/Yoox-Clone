@@ -296,7 +296,7 @@ margin-left: 8%;
 
 
 
-ul {
+.menucntr > ul {
     background-color: rgb(0, 0, 0);
     z-index: 2;
     display: inline-block;
@@ -368,9 +368,6 @@ ul {
 
 }
 
-
-
-
 .menucntr ul li :hover .col {
     visibility: visible;
 }
@@ -401,177 +398,169 @@ ul {
     align-items: center;
     margin: -15px 0 0 0;
 }
-/* 
-.thirdheader a {
-    padding: 7px;
+
+
+
+#content {
+    width: 85%;
+    margin: auto;
+    /* border: 2px solid green; */
+}
+
+
+
+#clothes {
     text-align: center;
-
-} */
-
-/* .thirdheader div {
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    color: #333;
     width: 90%;
-    height: 50px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 2%;
+}
+#clothes h2{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+hr {
+    height: 3px;
+    background-color: rgb(187, 185, 185);
+    width: 100%;
+}
+#options {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+    font-size: 12px;
+    color: #333;
+}
+
+#search {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(187, 185, 185);
+}
+
+.yVideo {
+    /* border: 3px solid #2694af; */
+    padding: 1%;
+    float: left;
+    display: block;
+    width: 100%;
+    height: 20%;
+    margin: 2% 5% 5% 0%;
+}
+
+#vi {
+    height: auto;
+    /* border: 1px saddlebrown solid; */
+    width: 100%;
+    padding: 2px;
+    display: block;
+}
+
+#vi #getInsp {
+    height: auto;
+    width: auto;
+    display: block;
+    margin-bottom: 1%;
+    /* border: #333 1px solid; */
+}
+
+#getInsp {
+    background-color: rgb(207, 205, 205);
     text-align: center;
-    
-} */
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    width: 25%;
+    height: auto;
+    display: block;
+}
 
-/* .rose {
-    margin-top: 180px;
-    background-color: #ffe9e5;
-    font-family: 'lato',sans-serif;
-    font-size: 11px;
-} */
-/* 
-.darkrose {
-    margin-top:140px;
-    background-color: #ce79ff96;
-    font-family: 'Montserrat',sans-serif;
+.headtail {
     font-size: 16px;
-    width:100%;
-} */
-
-
-#topsection {
-
-display: inline-block;
-vertical-align: top;
-width: 100%;
-height: 400px;
-max-width: 220px;
-margin-top: 200px;
-box-sizing: border-box;
-padding: 0 0 0 0;
-
-
+    color: #333;
+    font-weight: bolder;
+}
+#actualContent {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    justify-content: space-between;
 }
 
-h4 {
-
-/* color: #fc6486; */
-color: #000000;
-font-weight:800;
+#leftPanels {
+    width: 25%;
+    height: auto;
+    margin-top: 200px;
+    /* border: 2px solid red; */
 }
 
+/* Accordion Menu */
 
-.list-choice{
-
-width:220px;
-margin:auto;
-position: relative; 
-cursor: pointer;  
-font-family: 'Montserrat',sans-serif;
-font-weight: 700;
-box-sizing: border-box solid;
+#leftPanels #optionTwoAccordion {
+    /* margin-left: 20%; */
+    /* display: flex; */
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    /* background: #bedfe8; */
 }
 
-.list-choice input[type="radio"]{
-position:absolute;
-left:-9999px;
-
-font-family: 'Montserrat',sans-serif;
-font-weight: 700;
+.accordion {
+    max-width: 800px;
 }
 
-
-.list-choice-title {
-width: 100%;
-display: block;
-background:none;
-text-align: left;
-padding: 0 1em 0 0;
-box-sizing: border-box;
-color:black;
-text-shadow: none ;
-border-radius: 0.2em;
-font-family: 'Montserrat',sans-serif;
-font-weight: 700;
-box-sizing: border-box solid;
+.accordion .contentBx {
+    position: relative;
+    /* margin: 10px 20px; */
 }
 
-
-.list-choice:hover .list-choice-title {
-border-radius:0.2em 0.2em 0 0;
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    background: #dbdedf;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
 }
 
-
-.list-choice-objects label:nth-last-of-type(1) span{
-border-radius:0 0 0.2em 0.2em;
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 18px;
 }
 
-
-.list-choice input[type="radio"] + span {
-color: black;
-background: white ;
-width:220px;
-padding: 0;
-display: block;
-text-align:  center;
-box-sizing: border-box;
-cursor: pointer;
-width: 100%;
-font-family: 'Montserrat',sans-serif;
-font-weight: 700;
-box-sizing: border-box solid;
+.accordion .contentBx .content {
+    /* position: relative; */
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
 }
 
-
-.list-choice-objects {
-position: absolute;
-top: 0;
-padding-top: 3.1em;
-box-sizing: border-box;
-width: 100%;
-overflow: hidden;
-max-height: 0;
-font-family: 'Montserrat',sans-serif;
-font-weight: bolder;
-transition: all 250ms ease;
-box-sizing: border-box solid;
+.accordion .contentBx.active .content {
+    height: auto;
+    /* padding: 10px; */
 }
 
-
-.list-choice:hover .list-choice-objects  input[type="radio"] + span {
-position: relative;
-
-transition: all 250ms ease-in-out;
+.accordion .contentBx.active .label::before {
+    content: '-';
 }
 
-
-
-.list-choice:hover input[type="radio"] + span:hover {
-background: rgb(231, 228, 228);
+.contentBx ul {
+    display: block;
 }
 
-
-.list-choice:hover input[type="radio"]:checked + span:hover {
-background:none;
-}
-
-
-.list-choice input[type="radio"]:checked + span {
-background: none;
-position: absolute;
-
-border-radius: 0.2em;
-}
-
-
-.list-choice:hover input[type="radio"]:checked + span {
-border-radius: 0;
-}
-
-
-.list-choice:hover .list-choice-objects label:nth-last-of-type(1) input[type="radio"]:checked + span{
-border-radius:0 0 0.2em 0.2em;
-}
-
-
-.list-choice:hover .list-choice-objects {
-max-height: 540px;
-}
 
 .bottom{
 height: 50px;
@@ -631,32 +620,6 @@ font-family: 'Montserrat',sans-serif;
 font-weight: 700;
 }
 
-
-
-#topsection>div>h2 {
-
-color: #000000;
-font-weight: 700;
-
-
-}
-
-#topsection>div {
-color: black;
-border-bottom: 1px solid grey;
-padding: 8px;
-}
-
-#topsection>div>h3 {
-cursor: pointer;
-/* font-size: 13.28px; */
-font-weight:700
-}
-
-#topsection>div :last-child {
-    border-bottom: none;
-}
-
 #container div+div {
 list-style: none;
 flex: 0 0 0 32%;
@@ -680,42 +643,6 @@ font-weight: 500;
     height: 272px;
     width: 210px;
 }
-
-select.minimal {
-background-image:
-linear-gradient(45deg, transparent 100%),
-linear-gradient(135deg, transparent 100%),
-linear-gradient(to right);
-background-position:
-calc(100% - 20px) calc(1em + 2px),
-calc(100% - 15px) calc(1em + 2px),
-calc(100% - 2.5em) 0.5em;
-background-size:
-5px 5px,
-5px 5px,
-1px 1.5em;
-background-repeat: no-repeat;
-}
-
-select.minimal:focus {
-background-image:
-linear-gradient(45deg, transparent 100%),
-linear-gradient(135deg, transparent 100%, ),
-linear-gradient(to right);
-background-position:
-calc(100% - 15px) 1em,
-calc(100% - 20px) 1em,
-calc(100% - 2.5em) 0.5em;
-background-size:
-5px 5px,
-5px 5px,
-1px 1.5em;
-background-repeat: no-repeat;
-border-color: none;
-outline: 0;
-}
-
-
 </style>
 
 <body>
@@ -840,242 +767,261 @@ outline: 0;
        </div> 
         
 
-    <!-- <div class=" thirdheader"> -->
-        <!-- <div class="rose"><a>Spring Summer'22</a></div> -->
-        <!-- <div class="darkrose"><a>SEASONAL MUST-HAVES up to 65% OFF</a></div> -->
-        <!-- <div><h4><u>FIND STYLISH ESSENTIALS HERE</u></h4></div> -->
-        <!-- <div class="rose"><a> Free Shipping On All Orders</a></div> -->
-    <!-- </div> -->
+   
 </header>
 
 <div id="Box">
 
-<div id="topsection">
+    <div id="leftPanels">
 
-<div><h2> TOPS  </h2> </div>
-<div class="list-choice">
-<div class ="list-choice-title"> TOPS </div>
-<div class ="list-choice-objects">
-<label>
-   <input type="radio"/>
-   <span>CROP TOPS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>TANK TOPS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>T-SHIRTS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>SHIRTS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>BLOUSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>MAXI TOPS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>PEPLUM TOPS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>CAPE TOPS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>WRAP TOPS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>HALTER TOP</span>
-</label>
-<label>
-   <input type="radio"/>
-<span>LACE TOPS</span> 
-</label>
-<label>
-   <input type="radio"/>
-   <span>COLD SHOULDER TOPS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>OFF SHOULDER TOPS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>BELL SLEEVES TOPS</span>
-</label>
-</div>
+        <div id="vi">
+            <video playsinline="" muted="" autoplay="" loop="" class="yVideo" src="https://secure.social.yoox.it/yspecial/8BYYOOX/SS22/video_coreo.mp4?v=001" poster=""></video>
+        <!-- <video muted="" autoplay="" loop="" poster="" class="y-intro__video" src="https://secure.social.yoox.it/yspecial/merch/wedding/apr-2022/video/main.mp4?v=01"></video> -->
+            <div id="getInsp">
+                <p class="headtail"> ESSENTIAL POP </p>
+                <P> The new SS22 collection from 8 by YOOX</P>
+                <p class="headtail"> GET INSPIRED </p>
+            </div>
+        </div>
+
+         <!-- Accordion menu -->
+       <div id="optionTwoAccordion">
+         <div class="accordion">
+          <div class="contentBx">
+            <div class="label">CATEGORY </div>
+            <div class="content">
+                <p class="top"> Activewear </p>
+                <p class="top"> Coats & Jackets </p>
+                <p class="top"> Dresses </p>
+                <p class="top"> Jeans and Deniums </p>
+                <p class="top"> Jumpsuits </p>
+                <p class="top"> Partywear </p>
+                <p class="top"> Skirts </p>
+                <p class="top"> Loungewear </p>
+                <p class="top"> Tops & t-shirts </p>
+                <p class="top"> Sportswear </p>
+                <p class="top"> Shrugs </p>
+                <p class="top"> Officewear </p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label"> TOPS </div>
+            <div class="content">
+                <ul>
+                    <div class="arrangeTop">
+                        <div>
+                            <input class="check" type="checkbox">
+                            <option style="display: inline;" class="top"><a href="#">Crop Tops</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input class="check" type="checkbox">
+                            <option style="display: inline;" class="top"><a href="#">Tank Tops</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input class="check" type="checkbox">
+                            <option style="display: inline;" class="top"><a href="#">Lace Tops</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input class="check" type="checkbox">
+                            <option style="display: inline;" class="top"><a href="#">Halter Tops</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">Peplum Tops</a></option><br>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="contentBx">
+            <div class="label">SKIRTS </div>
+            <div class="content">
+                <ul>
+                    <div class="arrangeTop">
+                        <div>
+                            <input onclick="FilterBlueSaint()" class="check" type="checkbox">
+                            <option style="display: inline;" id="BlueSaint" onclick="FilterBlueSaint()"
+                                class="top" value="BLUE SAINT"><a href="#">Mini</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="Filterkoovs()" class="check" type="checkbox">
+                            <option style="display: inline;" id="koovs" onclick="Filterkoovs()" class="top"
+                                value="KOOVS"><a href="#">Maxi</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterFugazee()" class="check" type="checkbox">
+                            <option style="display: inline;" id="fugazee" onclick="FilterFugazee()"
+                                class="top" value="FUGAZEE"><a href="#">Midi</a></option><br>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div><div class="contentBx">
+            <div class="label"> MATERIALS </div>
+            <div class="content">
+                <ul>
+                    <div class="arrangeTop">
+                        <div>
+                            <input onclick="FilterBlueSaint()" class="check" type="checkbox">
+                            <option style="display: inline;" id="BlueSaint" onclick="FilterBlueSaint()"
+                                class="top" value="BLUE SAINT"><a href="#">Cashmere</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="Filterkoovs()" class="check" type="checkbox">
+                            <option style="display: inline;" id="koovs" onclick="Filterkoovs()" class="top"
+                                value="KOOVS"><a href="#">Cotton</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterFugazee()" class="check" type="checkbox">
+                            <option style="display: inline;" id="fugazee" onclick="FilterFugazee()"
+                                class="top" value="FUGAZEE"><a href="#">Leather</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">Linen</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">Organic Materials</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">Recycled Materials</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">Silk</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">Wool</a></option><br>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="contentBx">
+            <div class="label"> PRINT </div>
+            <div class="content">
+                <ul>
+                    <div class="arrangeTop">
+                        <div>
+                            <input onclick="FilterBlueSaint()" class="check" type="checkbox">
+                            <option style="display: inline;" id="BlueSaint" onclick="FilterBlueSaint()"
+                                class="top" value="BLUE SAINT"><a href="#">Animal print</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="Filterkoovs()" class="check" type="checkbox">
+                            <option style="display: inline;" id="koovs" onclick="Filterkoovs()" class="top"
+                                value="KOOVS"><a href="#">Camouflage</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterFugazee()" class="check" type="checkbox">
+                            <option style="display: inline;" id="fugazee" onclick="FilterFugazee()"
+                                class="top" value="FUGAZEE"><a href="#">Checks</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">Floral</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">One color</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">Other pattern</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">Polka dot</a></option><br>
+                        </div>
+                    </div>
+                    <div class="arrangeBrand">
+                        <div>
+                            <input onclick="FilterOne()" class="check" type="checkbox">
+                            <option style="display: inline;" id="one" onclick="FilterOne()" class="top"
+                                value="one/Zero"><a href="#">Stripes</a></option><br>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">SIMILAR SEARCHES </div>
+            <div class="content">
+                <ul>
+                    <li class="top"><a href="#">Feminine summer dress</a></li>
+                    <li><a href="#">Evening Gowns</a></li>
+                    <li><a href="#">Black dresses</a></li>
+                    <li><a href="#">Vintage apparel</a></li>
+                    <li><a href="#">80's Looks</a></li>
+                    <li><a href="#">Jewel buttons</a></li>
+                    <li><a href="#">Plum tones</a></li>
+                    <li><a href="#">Velvet skirts</a></li>
+                    <li><a href="#">Georgette dresses</a></li>
+                    <li><a href="#">Grunge style</a></li>
+                    <li><a href="#">Pale pink dresses</a></li>
+                    <li><a href="#">red dresses</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div><h3> JUMPSUITS </h3></div>
-<div> <h3> WORK FROM HOME COLLECTION </h3> </div> 
-<div class="list-choice">
-  <div class ="list-choice-title">LOUNGEWEAR </div>
-<div class ="list-choice-objects">
-<label>
-  <input type="radio"/>
-  <span>COORDINATES  </span>
-</label>
-<label>
-  <input type="radio"/>
-  <span>TOPS</span>
-</label>
-<label>
-  <input type="radio"/>
-  <span>DRESSES</span>
-</label>
-<label>
-  <input type="radio"/>
-  <span>SKIRTS</span>
-</label>
-<label>
-  <input type="radio"/>
-  <span>BOTTOMS</span>
-</label>
+<div id="vi">
+   <img src="https://www.yoox.com/images/yoox80/banners/6939_2_teleyoox_DM_ROW.png?634485886601286852"/>
 </div>
-</div>
-<div><h3> PARTY WEAR </h3> </div>
-<div><h3> NAB-NOW PIECES </h3></div>  
-<div><h3> SPORTS WEAR </h3></div>
-
-
-<div class="list-choice">
-<div class ="list-choice-title"> SKIRTS </div>
-<div class ="list-choice-objects">
-<label>
-  <input type="radio"/>
-  <span>MINI SKIRTS</span> 
-</label>
-<label>
-  <input type="radio"/>
-  <span>MAXI SKIRTS</span>
-</label>
-<label>
- <input type="radio"/>
- <span>MIDI SKIRTS</span>
-</label>
-</div>
-</div> 
-
-<div><h3> JEANS </h3> </div>
-<div><h3> SHORTS </h3> </div> 
-<div class="list-choice">
-<div class ="list-choice-title"> BOTTOMS </div>
-<div class ="list-choice-objects">
- <label>
-   <input type="radio"/>
-   <span>FORMAL TROUSERS</span> 
-</label>
-<label>
-   <input type="radio"/>
-   <span>LEGGINGS & JEGGINGS</span>
-</label>
-<label>
-  <input type="radio"/>
-  <span>WIDE LEGGED PANTS</span>
-</label>
-</div>
-</div>
-<div><h3> SHRUGS </h3> </div>
-<div><h3> OFFICE WEAR </h3> </div>
-<div class="list-choice">
-<div class ="list-choice-title">WINTER WEAR</div>
-<div class ="list-choice-objects">
-<label>
-   <input type="radio"/>
-   <span>BLAZERS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>JACKETS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>COATS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>SWEATERS & CARDIGANS</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>HOODIES & SWEATSHIRTS</span> 
-</label>
-</div>
-</div>
-
-
-<div><h3> UNDER 699 </h3> </div>
-<div><h3> UNDER 799 </h3> </div>
-<div> <h3> UNDER 999 </h3></div>
-
-
-<div class="list-choice">
-<div class ="list-choice-title"> DRESSES </div>
-<div class ="list-choice-objects">
-<label>
-   <input type="radio"/>
-   <span>BODYCON DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>SKATER DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>A-LINE DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>SHIRT DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>SHIFT DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>MAXI DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>WRAP DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>OFF SHOULDER DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>COLD SHOULDER DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>RUFFLE DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-<span>LITTLE BLACK DRESSES</span> 
-</label>
-<label>
-   <input type="radio"/>
-   <span>MINI DRESSES</span>
-</label>
-<label>
-   <input type="radio"/>
-   <span>OFF SHOULDER TOPS</span>
-</label>
-</div>
-</div>
-<div><img style="border-bottom: none ; margin-left: -10px; width:220px"; src="https://www.yoox.com/images/yoox80/banners/6939_2_teleyoox_DM_US.png?634485886869569819"></div>
 </div>
 
 <div id="container">
@@ -1092,6 +1038,13 @@ outline: 0;
 
 </html>
 <script>
+
+const accordion = document.getElementsByClassName("contentBx");
+for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+    })
+}
 var TopsData = [
 {
 image_url:
