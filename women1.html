@@ -456,7 +456,8 @@ padding: 0 0 0 0;
 h4 {
 
 /* color: #fc6486; */
-font-size: 16px;
+color: #000000;
+font-weight:700;
 }
 
 
@@ -467,7 +468,7 @@ margin:auto;
 position: relative; 
 cursor: pointer;  
 font-family: 'Montserrat',sans-serif;
-font-size: 13.28px;
+font-weight: 700;
 box-sizing: border-box solid;
 }
 
@@ -476,7 +477,7 @@ position:absolute;
 left:-9999px;
 
 font-family: 'Montserrat',sans-serif;
-font-size: 13.28px;
+font-weight: 700;
 }
 
 
@@ -491,7 +492,7 @@ color:black;
 text-shadow: none ;
 border-radius: 0.2em;
 font-family: 'Montserrat',sans-serif;
-font-size: 13.28px;
+font-weight: 700;
 box-sizing: border-box solid;
 }
 
@@ -517,7 +518,7 @@ box-sizing: border-box;
 cursor: pointer;
 width: 100%;
 font-family: 'Montserrat',sans-serif;
-font-size: 13.28px;
+font-weight: 700;
 box-sizing: border-box solid;
 }
 
@@ -531,7 +532,7 @@ width: 100%;
 overflow: hidden;
 max-height: 0;
 font-family: 'Montserrat',sans-serif;
-font-size: 13.28px;
+font-weight: bolder;
 transition: all 250ms ease;
 box-sizing: border-box solid;
 }
@@ -590,7 +591,7 @@ padding: 10px 10px 10px 10px;
 
 .bottom p{
   font-family: 'Montserrat',sans-serif;
-  font-size: 16px;
+  font-weight: 700;
   color: #000000;
    
 }
@@ -599,9 +600,10 @@ padding: 10px 10px 10px 10px;
 
 display: flex;
 flex-wrap: wrap;
+gap: 10px;
 padding-left: 50px;
 float: right;
-width: 78%;
+width: 70%;
 justify-content: space-around;
 margin-top: 200px;
 
@@ -609,36 +611,38 @@ margin-top: 200px;
 
 }
 #container div{
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-border: none;
-margin: 0px 5px 0px 0px;
+/* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+/* border: 1px solid red; */
+margin: 0;
 margin-right: 5px;
-height: 560px;
-border-radius: 8px;
+height: 450px;
+width:250px;
+align-content: center;
+text-align: center;
+/* gap:20px; */
+/* border-radius: 8px; */
 }
 
 #container  div button {
 background-color: #ffffff;
 color: black;
-border-radius: 5px;
+
 padding: 1px 10px 1px 10px;
 margin-top:none ;
-margin-bottom: 20px;
+margin-bottom: 0px;
 
-box-shadow: 2.5px 5px #888888;
+/* box-shadow: 2.5px 5px #888888; */
 font-family: 'Montserrat',sans-serif;
+font-weight: 700;
 }
 
-h4 strike {
-color: rgb(68, 65, 65);
-margin-left: 12px;
-font-size: 16px;
-}
+
 
 #topsection>div>h2 {
 
 color: #000000;
-font-size: 24px;
+font-weight: 700;
+
 
 }
 
@@ -650,20 +654,32 @@ padding: 8px;
 
 #topsection>div>h3 {
 cursor: pointer;
-font-size: 13.28px;
+/* font-size: 13.28px; */
+font-weight:700
 }
 
 #container div+div {
 list-style: none;
 flex: 0 0 0 32%;
-margin-bottom: 80px;
+margin-bottom: 40px;
 }
 
 #container>div>p {
 cursor: pointer;
-font-size:13.28px;
+/* font-size:13.28px; */
+font-weight:700;
+}
 
+h5 strike  {
+color: rgb(68, 65, 65);
+margin-left: 12px; 
+font-weight: 500;
+/* float:right; */
+}
 
+#container > div > img {
+    height: 272px;
+    width: 210px;
 }
 
 select.minimal {
@@ -1072,290 +1088,290 @@ outline: 0;
 var TopsData = [
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05069Z/1.jpg",
+"https://www.yoox.com/images/items/12/12655168md_14_e.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Olive Solid Belted Blouse ",
-symbol: "₹",
+off: "19% off",
 price: "600",
 strikedoffprice: "₹1200",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05298Z/1.jpg",
+"https://www.yoox.com/images/items/12/12625168dm_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Pink Buttoned Pleated Dobby Peplum Top",
-symbol: "₹",
+off: "19% off",
 price: "800",
 strikedoffprice: "₹1600",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04139Z/1.jpg",
+"https://www.yoox.com/images/items/12/12439115pt_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: " Wine Embellish High Neck Top",
-symbol: "₹",
+off: "19% off",
 price: "700",
 strikedoffprice: "₹1400",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04895Z/1.jpg",
+"https://www.yoox.com/images/items/12/12733716ke_14_e.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Pink Ditsy Floral Elasticated Sleeve Wrap",
-symbol: "₹",
+off: "19% off",
 price: "750",
 strikedoffprice: "₹1500",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP02485A/1.jpg",
+"https://www.yoox.com/images/items/12/12706016pp_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Turtle Neck Maxi Top - Navy ",
-symbol: "₹",
+off: "19% off",
 price: "800",
 strikedoffprice: "₹1600",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04908Z/1.jpg",
+"https://www.yoox.com/images/items/12/12703545xd_14_f.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: " Black Poplin Short Sleeve Kimono Top ",
-symbol: "₹",
+off: "19% off",
 price: "600",
 strikedoffprice: "₹1200",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04863Z/1.jpg",
+"https://www.yoox.com/images/items/12/12717115bo_14_e.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: " White Mesh Ruched Smocked Crop Top",
-symbol: "₹",
+off: "19% off",
 price: "800",
 strikedoffprice: "₹1600",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04334Z/1.jpg ",
+"https://www.yoox.com/images/items/12/12721970mv_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center ",
 name: "Black Embellished Neck Layered Top ",
-symbol: "₹",
+off: "19% off",
 price: "750",
 strikedoffprice: "₹1500",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04138Z/1.jpg",
+"https://www.yoox.com/images/items/12/12645197di_14_e.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Black Embellished Neck Layered Top",
-symbol: "₹",
+off: "19% off",
 price: "700",
 strikedoffprice: "₹1400",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05594Z/1.jpg",
+"https://www.yoox.com/images/items/12/12642343bo_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Blue Cold Shoulder Halter Embellished Top",
-symbol: "₹",
+off: "19% off",
 price: "699",
 strikedoffprice: "₹999",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04986Z/1.jpg ",
+"https://www.yoox.com/images/items/12/12642829av_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center ",
 name: "Hot Pink Schiffli Puff Sleeve Top",
-symbol: "₹",
+off: "19% off",
 price: "825",
 strikedoffprice: "₹1650",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04866Z/1.jpg",
+"https://www.yoox.com/images/items/12/12648147an_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Pink Floral Ruffled Halter Top",
-symbol: "₹",
+off: "19% off",
 price: "700",
 strikedoffprice: "₹1400",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05616Z/1.jpg",
+"https://www.yoox.com/images/items/12/12645004bq_14_e.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Wine Mesh Full Sleeve Blouse",
-symbol: "₹",
+off: "19% off",
 price: "750",
 strikedoffprice: "₹1500",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05278Z/1.jpg",
+"https://www.yoox.com/images/items/12/12651113ha_14_e.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Black Floral Wrap Peplum Top",
-symbol: "₹",
+off: "19% off",
 price: "750",
 strikedoffprice: "₹1500",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05164Z/1.jpg",
+"https://www.yoox.com/images/items/12/12664471bd_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: " Blush Pink Neck Tie Lace Top ",
-symbol: "₹",
+off: "19% off",
 price: "900",
 strikedoffprice: "₹1800",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05453Z/1.jpg",
+"https://www.yoox.com/images/items/12/12647156sh_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Black Floral Pussy Bow Blouse",
-symbol: "₹",
+off: "19% off",
 price: "1600",
 strikedoffprice: "₹2100",
 
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05018Z/1.jpg",
+"https://www.yoox.com/images/items/12/12646656ew_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Green Schiffli Ruffle Sleeve Top",
-symbol: "₹",
+off: "19% off",
 price: "825",
 strikedoffprice: "₹1650",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05300Z/1.jpg ",
+"https://www.yoox.com/images/items/12/12642543gi_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Maroon Lace Ruched Sleeve Top ",
-symbol: "₹",
+off: "19% off",
 price: "800",
 strikedoffprice: "₹1600",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP01574A/1.jpg",
+"https://www.yoox.com/images/items/12/12660749dn_14_e.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: " Military Mad Henley T-Shirt",
-symbol: "₹",
+off: "19% off",
 price: "425",
 strikedoffprice: "₹850",
 },
 {
 image_url:
-" https://img.faballey.com/images/Product/TOP04255Z/1.jpg ",
+" https://www.yoox.com/images/items/13/13755356fl_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center ",
 name: " Pink Gingham Pussy Bow Top",
-symbol: "₹",
+off: "19% off",
 price: "750",
 strikedoffprice: "₹1500",
 },
 {
 image_url:
-" https://img.faballey.com/images/Product/TOP05427Z/1.jpg",
+" https://www.yoox.com/images/items/12/12522064se_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Wine Puffed Sleeve Belted Blouse",
-symbol: "₹",
+off: "19% off",
 price: "800",
 strikedoffprice: "₹1600",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04259Z/1.jpg ",
+"https://www.yoox.com/images/items/12/12326556xp_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center ",
 name: " Yellow Gingham Belted Top ",
-symbol: "₹",
+off: "19% off",
 price: "450",
 strikedoffprice: "₹1500",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05745Z/1.jpg ",
+"https://www.yoox.com/images/items/12/12557418it_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center ",
 name: "White Satin Strappy Textured Top",
-symbol: "₹",
+off: "19% off",
 price: "600",
 strikedoffprice: "₹1200",
 },
 {
 image_url:
-" https://img.faballey.com/images/Product/TOP05527Z/1.jpg ",
+" https://www.yoox.com/images/items/12/12479398fc_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Maroon Ruched Sweetheart Neck Knit Top",
-symbol: "₹",
+off: "19% off",
 price: "600",
 strikedoffprice: "₹1200",
 },
 {
 image_url:
-" https://img.faballey.com/images/Product/TOP05272Z/1.jpg ",
+" https://www.yoox.com/images/items/12/12337135fm_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Dusty Pink Front Ruched Peplum Top",
-symbol: "₹",
+off: "19% off",
 price: "700",
 strikedoffprice: "₹1400",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04997Z/1.jpg ",
+"https://www.yoox.com/images/items/12/12493014uq_14_e.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center ",
 name: "Mustard Blouson Sleeve Buttoned Top ",
-symbol: "₹",
+off: "19% off",
 price: "1500",
 strikedoffprice: "₹750",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05111Z/1.jpg",
+"https://www.yoox.com/images/items/12/12576115gc_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: " Blue Dotted Smocked Sleeves Top ",
-symbol: "₹",
+off: "19% off",
 price: "700",
 strikedoffprice: "₹1400",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04156Z/1.jpg",
+"https://www.yoox.com/images/items/12/12548777dg_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Pink Striped Belted Wrap Top",
-symbol: "₹",
+off: "19% off",
 price: "850",
 strikedoffprice: "₹1700",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04947Z/1.jpg",
+"https://www.yoox.com/images/items/14/14225042vh_14_f.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Red Striped Cuffed Detail Blouse",
-symbol: "₹",
+off: "19% off",
 price: "700",
 strikedoffprice: "₹1400",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05181Z/1.jpg",
+"https://www.yoox.com/images/items/12/12343361ek_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Beige Pink Smocked Puff Sleeve Crop Top",
-symbol: "₹",
+off: "19% off",
 price: "750",
 strikedoffprice: "₹1500",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04142Z/1.jpg",
+"https://www.yoox.com/images/items/12/12400857mf_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Navy Bow Shoulder",
-symbol: "₹",
+off: "19% off",
 price: "750",
 strikedoffprice: "₹1500",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05375Z/1.jpg",
+"https://www.yoox.com/images/items/12/12730373tm_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Slate Blue Neck Tie Up Blouse",
-symbol: "₹",
+off: "19% off",
 price: "700",
 strikedoffprice: "₹1400",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05249Z/1.jpg",
+"https://www.yoox.com/images/items/12/12479947dx_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "White Strappy Schiffli Peplum Top",
-symbol: "₹",
+off: "19% off",
 price: "700",
 strikedoffprice: "₹1400",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP04031Z/1.jpg",
+"https://www.yoox.com/images/items/12/12407025wl_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Blue Bell Sleeve Jacquard Wrap Top",
-symbol: "₹",
+off: "19% off",
 price: "510",
 strikedoffprice: "₹1700",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05426Z/1.jpg ",
+"https://www.yoox.com/images/items/12/12526878ct_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center ",
 name: "Black Puffed Sleeve Belted Blouse",
-symbol: "₹",
+off: "19% off",
 price: "800",
 strikedoffprice: "₹1600",
 },
 {
 image_url:
-"https://img.faballey.com/images/Product/TOP05703Z/1.jpg",
+"https://www.yoox.com/images/items/12/12532439ld_14_r.jpg?width=210&amp;height=272&amp;impolicy=crop&amp;gravity=Center",
 name: "Pink Tie Dye Smocked Sleeve Layered Top",
-symbol: "₹",
+off: "19% off",
 price: "1400",
 strikedoffprice: "₹2500",
 },
@@ -1374,8 +1390,8 @@ img.src = elem.image_url;
 var name = document.createElement("p");
 name.textContent = elem.name;
 
-// var symbol= document.createElement("h4");
-// symbol.innerText = elem.symbol;
+var off = document.createElement("h5");
+off.innerText = elem.off;
 
 var price = document.createElement("h4");
 price.innerText = elem.price;
@@ -1389,10 +1405,10 @@ cart.innerText = "Add To Bag"
 cart.addEventListener("click",function(){
 cartclick(elem)
 })
-// price.append(symbol)
-price.append(strikedoffprice)
 
-box.append(img, name, price, cart);
+off.append(strikedoffprice)
+
+box.append(img, name, price, off, cart );
 
 document.querySelector("#container").append(box);
 });
