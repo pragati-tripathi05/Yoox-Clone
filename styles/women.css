@@ -1,0 +1,292 @@
+body{
+    font-family: Montserrat;
+    background-color: #f3f3f3;
+}
+
+
+/*top black navigation bar*/
+#navigation{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Montserrat;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+ul{
+    display: flex;
+    text-align: center;
+    margin-left: 15%;
+}
+li {
+    cursor: pointer;
+    height: 16px;
+    padding: 4px 6px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+li:hover{
+    color: rgb(156, 146, 146);
+}
+
+/* #yellow{
+    background-color: #f1a914;
+    text-align: center;
+    font-family: Montserrat;
+    height: 100px;
+}
+#off{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 200px;
+    color: black;
+}
+#sub{
+    font-size: 12px;
+    color: rgb(109, 108, 108);
+} */
+
+
+
+
+/*main content*/
+
+/*images in full width of screen- topmost and last*/
+.fullwidth{
+    width: 100%;
+    height: auto;
+}
+#last{
+    height: auto;
+    display: flex;
+}
+#last img{
+    width: 50%;
+}
+#unique{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+}
+#uniquesub{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Montserrat;
+    text-align: center;
+}
+#firstcardcontent p{
+    text-align: left;
+}
+
+#firstcardcontent{
+    background-color: white;
+    color: #333;
+    width: 32%;
+    height: auto;
+    padding: 1.5%;
+    position: absolute;
+    z-index: 2;
+    margin-top: -15%;
+    margin-left: 1%;
+}
+#lastcardcontent{
+    background-color: white;
+    color: #333;
+    width: auto;
+    height: auto;
+    padding: 0% 2%;
+    position: absolute;
+    z-index: 2;
+    margin-left: 2%;
+    margin-top: 33%;
+}
+#lastcardcontent p{
+    text-align: left;
+}
+#lastcardcontent a{
+    font-size: 12px;
+    text-decoration: underline;
+}
+#lastcardcontentright{
+    background-color: white;
+    color: #333;
+    width: 25%;
+    height: auto;
+    padding: 0% 2%;
+    position: absolute;
+    z-index: 2;
+    margin-top: 33%;
+    margin-left: 65%;
+    /* border: 1px solid black; */
+}
+#lastcardcontentright p{
+    text-align: right;
+    /* border: 1px solid blue; */
+}
+#lastcardcontentright a{
+    font-size: 11px;
+    margin-left: 150%;
+    text-decoration: underline;
+}
+#shopinspire{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+#firstcardcontent a{
+    font-size: 12px;
+    text-decoration: underline;
+}
+#secondrow{
+    margin-top: 15%;
+    width: 75%;
+    /* border: 1px solid red; */
+    margin-left: 10%;
+    display: flex;
+    gap: 20%;
+}
+
+#designers{
+    background-color: white;
+    width: 15%;
+    height: auto;
+    padding: 5%;
+    padding-right: 7%;
+    position: absolute;
+    z-index: 2;
+    margin-top: -5%;
+    margin-left: 25%;
+    text-align: center;
+}
+#names{
+    display: inline-block;
+    padding: 4%;
+}
+#names li{
+   font-weight: bold;
+   /* line-height: 70px; */
+}
+
+
+#headings{
+    margin-top: 10%;
+    height: 140px;
+    text-align: center;
+}
+#newarrival{
+    font-size: 30px;
+    color: #333;
+}
+.viewall{
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #333;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.viewall:hover{
+    color: rgb(179, 176, 176);
+    cursor: pointer;
+}
+
+#threecards{
+    /* border: 1px solid teal; */
+    margin-top: 25%;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin: auto;
+    gap: 20px;
+    text-align: center;   
+}
+
+
+#details{
+    background-color: white;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    margin-top: -5px;
+}
+#itemname{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+#categ{
+    font-size: 14px;
+    font-weight: 50px;
+    color: #333;
+}
+#price{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#sectionfour{
+    background-color: white;
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 120%;
+    display: flex;
+   gap: 20px;
+    margin-top: 8%;
+    padding: 7% 0%;
+}
+#one img{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 10%;
+    height: 75%;
+}
+
+#peopledance{
+    margin-top: 15%;
+    width: 75%;
+    /* border: 1px solid red; */
+    margin-left: 10%;
+    margin-bottom: 8%;
+}
+
+#vertical{
+    background-color: white;
+    color: #333;
+    font-size: 10px;
+    height: 500px;
+    width: 20%;
+    padding-left: 1%;
+    position: absolute;
+    z-index: 2;
+    margin-top: -40%;
+    margin-left: 60%;
+}
+#vertical img{
+    width: 85%;
+    height: 70%;
+    padding-left: 1%;
+}
+#strike{
+    text-decoration: line-through;
+    color: rgb(180, 180, 180);
+    text-align: center;
+}
+#onecard{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+#category{
+    text-align: center;
+}

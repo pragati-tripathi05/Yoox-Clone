@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 11PX;
+    font-weight: 600;
+    padding: 0;
+    line-height: 36px;
+    color: #323232;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: Montserrat;
+}
+
+.topmost {
+    height: 35px;
+    width: 100%;
+    border-bottom: 1px solid rgb(208, 207, 207);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    height: 36px;
+    background: #fff;
+    top: 0;
+    z-index: 99999;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.topmost2 {
+    height: 55px;
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    z-index: 99999;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.exleft {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+    /* margin-left: 20px; */
+    /* padding: 0px 30px 0px 30px; */
+}
+
+
+.exleft2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    cursor: pointer;
+    /* margin-left: 20px; 
+         padding: 0px 30px 0px 30px;  */
+}
+.exleft2 div{
+    font-weight: bold;
+}
+.exleft2 a{
+    text-decoration: none;
+}
+.exright {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.inside {
+    height: 30px;
+    width: 300px;
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    /* border-right: 1px solid rgb(41, 38, 38); */
+
+}
+
+.inside2 {
+    height: 10px;
+    width: 300px;
+    display: block;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: -12px;
+    cursor: pointer;
+
+}
+
+.inside2 img {
+    height: 35px;
+    width: 100%;
+
+}
+
+.rightside {
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.rightside2 {
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.rightside div {
+
+    height: 16px;
+    padding-right: 5px;
+    text-align: center;
+    margin: auto;
+    word-spacing: 10px;
+}
+
+.rightside div a {
+    text-decoration: none;
+    color: black;
+    display: block;
+
+    word-spacing: 10px;
+}
+
+.rightside div:last-child {
+    border: none;
+    /* word-spacing: 10px; */
+}
+
+.menucntr {
+
+    background: rgb(0, 0, 0);
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    display: inline-block;
+    margin-left: 0%;
+    height: 35px;
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 5px;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+.lvl-1>li {
+    float: left;
+    margin-left: 3%;
+    display: block;
+    list-style: none;
+    cursor: pointer;
+
+}
+
+.lvl-1>li :hover {
+    color: rgb(156, 146, 146);
+}
+
+.lvl-1>li>a {
+    font-weight: 600;
+    display: inline-block;
+    font-size: 11.5px;
+    line-height: 10px;
+    overflow: visible;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+    font-family: 'Lato', sans-serif;
+}
+
+/* MEGA MENU  */
+
+.menucntr ul li :hover .col {
+    visibility: visible;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+#content {
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid green; */
+}
+#toplink{
+    margin-top: 10%;
+}
+p {
+    color: rgb(145, 144, 144);
+    font-size: 12px;
+    text-align: center;
+}
+
+p a {
+    text-decoration: underline;
+    color: rgb(145, 144, 144);
+    margin-top: 2%;
+}
+
+#shoes {
+    text-align: center;
+    color: #333;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 2%;
+}
+#shoes h2{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+hr {
+    height: 3px;
+    background-color: rgb(187, 185, 185);
+    width: 100%;
+}
+
+#para {
+    /* margin-top: -1%; */
+    color: #333;
+    text-align: center;
+    line-height: 17px;
+    word-spacing: 5px;
+}
+
+#options {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+    font-size: 12px;
+    color: #333;
+}
+
+#search {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(187, 185, 185);
+}
+
+.yVideo {
+    /* border: 3px solid #2694af; */
+    padding: 1%;
+    float: left;
+    display: block;
+    width: 100%;
+    height: 20%;
+    margin: 2% 5% 5% 0%;
+}
+
+#vi {
+    height: auto;
+    /* border: 1px saddlebrown solid; */
+    width: 100%;
+    padding: 2px;
+    display: block;
+}
+
+#vi #getInsp {
+    height: auto;
+    width: auto;
+    display: block;
+    margin-bottom: 1%;
+    /* border: #333 1px solid; */
+}
+
+#getInsp {
+    background-color: rgb(207, 205, 205);
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    width: 25%;
+    height: auto;
+    display: block;
+}
+
+.headtail {
+    font-size: 16px;
+    color: #333;
+    font-weight: bolder;
+}
+
+#actualContent {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+
+#leftPanels {
+    width: 25%;
+    height: auto;
+    /* border: 2px solid red; */
+}
+
+#rightProducts {
+    width: 72%;
+    /* border: 2px solid blue; */
+}
+
+#products {
+    padding-left: 80px;
+    padding-right: 10px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#products {
+    /* border: 1px solid black; */
+    width: 77%;
+}
+
+
+
+/* Accordion Menu */
+
+#leftPanels #optionTwoAccordion {
+    /* margin-left: 20%; */
+    /* display: flex; */
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    /* background: #bedfe8; */
+}
+
+.accordion {
+    max-width: 800px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    /* margin: 10px 20px; */
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    background: #dbdedf;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.accordion .contentBx .content {
+    /* position: relative; */
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active .content {
+    height: auto;
+    /* padding: 10px; */
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+
+.contentBx ul {
+    display: block;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+.menu-bar {
+    /* border: 1px solid black; */
+    width: 23%;
+}
+
+.menu-bar ul {
+    list-style: none;
+}
+
+.menu {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.subMenu {
+    display: none;
+    /* transition: opacity 150ms ease-in-out; */
+}
+
+.genderHead {
+    /* border: 1px solid black; */
+    padding-top: 40px;
+}
+
+.downArrow {
+    padding-left: 10px;
+}
+
+.downArrow {
+    margin-right: 20px;
+}
+
+.arrow {
+    width: 10px;
+}
+
+.cat {
+    font-size: 15px;
+    display: inline;
+    margin-left: 5px;
+    border: 1px solid red;
+    background-color: #b4b4b6;
+}
+
+.arrange {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    height: 30px;
+    padding-top: 20px;
+    align-items: baseline;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.arrangeWomen {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    height: 30px;
+    padding-top: 20px;
+    align-items: baseline;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.arrangeTop {
+    /* padding-top: 30px; */
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.arrangeBrand {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin: 10px 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.arrangeDiscountTop {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin-bottom: 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    align-items: baseline;
+    padding-top: 10px;
+    /* padding-top: 10px; */
+    padding-bottom: 0px;
+}
+
+.downArrow {
+    padding-left: 10px;
+}
+
+.arrangeDiscount {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin: 10px 0px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -20px;
+}
+
+.top {
+    margin-top: 15px;
+    color: #323232;
+}
+
+.border {
+    border-bottom: 1px solid #d9d9dd;
+    /* border-bottom: 1px solid #87878a; */
+    padding-bottom: 10px;
+}
+
+.show {
+    display: block;
+    /* transition: all 0.3s ease, visibility 0s linear 0.3s; */
+    /* z-index: 1; */
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0.3s;
+    /* transition: opacity 150ms ease;
+    transform: 150ms ease; */
+}
+
+#downTown {
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    left: 80%;
+    /* display: none; */
+    border: 1px solid #d9d9dd;
+    border-top: none;
+    /* transform: translateY(-3em); */
+    z-index: 1;
+    transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+#downTown>ul>li {
+    padding: 0px;
+    list-style: none;
+}
+
+.check {
+    margin-right: 10px;
+    background-image: url(https://img.icons8.com/windows/32/000000/checked-checkbox--v1.png);
+}
