@@ -205,6 +205,14 @@ shop.map(function (elem) {
     displayData(shop)
 });
 
+function addToCart(elem) {
+    console.log(elem);
+    cartProducts.push(elem);
+    localStorage.setItem("cartData", JSON.stringify(cartProducts));
+    alert("item added to cart");
+}
+document.querySelector(".countPlace").innerText = cartProducts.length
+
 function SortDown() {
     var down = document.getElementById("downTown")
     down.classList.toggle("show")

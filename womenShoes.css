@@ -12,7 +12,7 @@
     font-family: Montserrat;
 }
 
-.currentpage{
+.currentpage {
     border-bottom: 3px solid yellow;
 }
 
@@ -82,6 +82,18 @@
 .exright {
     margin-right: 20px;
     cursor: pointer;
+}
+
+.bagC {
+    /* border: 1px solid red; */
+    margin-top: -440%;
+    margin-left: 45%;
+    /* position: absolute; */
+    font-size: 12px;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+    /* padding-top: 3px; */
 }
 
 .inside {
@@ -202,6 +214,7 @@
     margin: auto;
     height: auto;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .dropleft {
@@ -211,6 +224,10 @@
     padding-top: 15px;
     background-color: #f3f3f3;
     height: auto;
+}
+
+.loption:hover{
+    color: #a09c9c;
 }
 
 .loption {
