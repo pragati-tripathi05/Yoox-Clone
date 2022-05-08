@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    /* font-weight: 600; */
+    /* margin: 0;
+    padding: 0; */
+    line-height: 30px;
+    color: #323232;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #f3f3f3; */
+}
+
+.topmost2 {
+    height: 55px;
+    width: 110%;
+    /* margin-top: 36px; */
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    /* background: #fff; */
+    top: 0;
+    z-index: 99999;
+    padding-left: 100px;
+    padding-right: 120px;
+    background-color: rgb(245, 244, 244);
+}
+
+.inside2 {
+    height: 10px;
+    width: 300px;
+    display: block;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: -12px;
+    cursor: pointer;
+    font-weight: 700;
+    
+}
+
+.inside2 img {
+    height: 35px;
+    width: 100%;
+    
+}
+.rightside2 {
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+.rightside2 p{
+    font-weight: bolder;
+    font-size: 16px;
+    margin-top: -5%;
+}
+
+#content{
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    /* border: 2px solid green; */
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    /* background-color: #f3f3f3; */
+   
+}
+#leftblock{
+    /* border: 1px solid orange; */
+    border: 1px solid #e6e5e5;
+    width: 62%;
+    height: auto;
+    padding: 2%;
+    /* background-color: #f3f3f3; */
+    background-color: white;
+}
+#shippingblock{
+    background-color: #f3f3f3;
+    background-color: white;
+}
+
+#rightblock{
+    width: 35%;
+    border: 1px solid turquoise;
+    height: auto;
+    /* background-color: #f3f3f3; */
+    border: 1px solid #e6e5e5;
+    padding: 2%;
+}
+#heading{
+    font-family: 'Times New Roman', Times, serif
+}
+#shippingdetails{
+    margin: auto;
+    display: flex;
+    font-size: 12px;
+    width: 100%;
+    border: 2px solid black;
+    justify-content: space-evenly;
+}
+
+#left{
+    width: 70%;
+    border: 1px solid blueviolet;
+    
+}
+
+#right{
+    width: 140%;
+    margin-right: 20%;
+    border: 1px solid yellow;
+    
+}
+#right #cards{
+    margin-top: 20%;
+}
+input{
+    background-color: rgb(230, 227, 227);
+    border: none;
+    padding: 2%;
+    font-weight: bolder;
+    margin-top: 10px;
+    width: 95%;
+}
+#optional{
+    float: right;
+    margin-top: -5px;
+    margin-bottom: -2px;
+    padding-right: 4%;
+}
+#check{
+    margin-left: -40%;
+}
+label{
+    margin-left: -40%;
+    font-weight: bold;
+}
+#ship{
+    background-color: #323232;
+    color: white;
+    padding: 2%;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 50%;
+    cursor: pointer;
+}
+#paymentreview{
+    margin-top: 2%;
+    width: 100%;
+    height: 100px;
+    padding: 3%;
+    /* background-color: #dfdede; */
+    border: 1px solid #e6e5e5;
+    /* border: 1px solid blue; */
+}
+#paymentreview h1{
+    color: #c9c6c6;
+    font-family: 'Times New Roman', Times, serif;
+}
+#gateways{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid teal; */
+    font-size: 8px;
+    font-weight: bold;
+}
+#gateways div{
+    width: 18%;
+    /* border: 1px solid black; */
+}
+#gateways img{
+    width: 100%;
+    height: auto;
+}
+.gate{
+    margin-top: 45%;
+}
+#faq{
+    padding: 5%;
+    /* border: 1px solid green; */
+    width: 100%;
+    margin-top: 5%;
+    border-top: 1px solid #e6e5e5;
+}
+#faqtext{
+    width: 60%;
+    margin: auto;
+}
+#faqtext p{
+    cursor: pointer;
+    font-size: 12px;
+}
+.fa-angle-down{
+    float: right;
+    font-size: 10px;
+}
+.rightly{
+    float: right;
+}
+#yourorderblock p{
+    font-size: 12px;
+    margin-bottom: -5%;
+}
+#lastblack{
+    background-color: #323232;
+   padding: 2%;
+   width: 100%;
+}
+
+#para1{
+    text-align: center;
+   color: white;
+   font-size: 10px;
+}
+#para2{
+    text-align: center;
+   color: rgb(151, 150, 150);
+   font-size: 12px;
+}
+
+#paymentMethod{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+#paymentMethod div{
+    width: 30%;
+}
+#credit{
+    margin-left: -38%;
+}
+#cards{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+#free{
+    float: right;
+}
+#cards div{
+    width: 20%;
+}
+#cards img{
+    width: 120%;
+    height: 60%;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 5px;
+}
+#enter{
+    margin-bottom: -5%;
+}
+#paymentblock{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -5%;
+}
+#proceed{
+    width: 50%;
+    float: right;
+    background-color: #323232;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
