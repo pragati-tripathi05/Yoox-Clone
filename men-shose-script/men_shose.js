@@ -150,15 +150,27 @@ let send_card=(ele) =>{
 
 // Filter
 let lth=()=>{
-  shoes_data.filter(function(ele,i){
-    return ele.price--;
-  })
-  shoes_append(shoes_data);
-  container.innerHTML=null;
+  shoes_data.sort((a,b) =>{
+    if(a.price>b.price){
+      return 1
+    }
+    if(a.price<b.price){
+      return -1;
+    }
+  });
+  shoes_append(shoes_data);                
 }
 
 
 let htl=()=>{
-
+  shoes_data.sort((a,b) =>{
+    if(a.price>b.price){
+      return -1
+    }
+    if(a.price<b.price){
+      return 1;
+    }
+  })
+  shoes_append(shoes_data);
 }
 // end filter
