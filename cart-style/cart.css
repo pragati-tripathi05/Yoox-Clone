@@ -415,14 +415,15 @@ img{
         background-color: white;
         margin-left: -20%;
         visibility: hidden;
+        display: none;
     
     }
     
     
-    /* .menucntr ul li :hover .col {
+ .menucntr ul li :hover .col {
         visibility: visible;
+        display: flex;
     }
-     */
     
     .thirdheader {
         display: flex;
