@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font awesome script file, title image, css file, title -->
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="https://www.yoox.com/media/yoox16/favicon/android-icon-192x192.png">
+    <link rel="stylesheet" href="/styles/kidsHomepage.css">
+    <link rel="stylesheet" href="/layouts/yooxfooter/styles/footer.css">
+    <title>YOOX Kids | Apparel online for babies, kids and teens </title>
+
+</head>
+<body>
+    <header>
+        <div class="top1">
+            <div class="topmost">
+                <div class="exleft">
+                    <div> <select class="country">
+                            <option><u>UNITED STATES</u></option>
+                            <option><u>UNITED KINGDOM</u></option>
+                            <option><u>INDIA</u></option>
+                            <option><u>AUSTRALIA</u></option>
+                            <option><u>SPAIN</u></option>
+                            <option><u>ITALY</u></option>
+                            <option><u>DUBAI</u></option>
+                        </select>
+                    </div>
+                    <div><u>CUSTOMER CARE</u></div>
+                    <!-- <span style="color: black;">shop now></span> -->
+                </div>
+                <div class="inside"> FREE STANDARD SHIPPING ON ORDERS OVER $100 </div>
+                <div class="rightside">
+                    <div><a href="/layouts/signUp.html"><i class="fa-solid fa-pencil"></i><u>Register</u></a></div>
+                    <div class="login"><a href="/layouts/logIn.html"><i class="fa-solid fa-unlock"></i><u>Login</u></a></div>
+                </div>
+            </div>
+
+            <div class="topmost2">
+                <div class="exleft2">
+                    <a href="/layouts/HOME-women.html">
+                        <div>WOMEN</div>
+                    </a>
+                    <a href="/layouts/menHomepage.html">
+                        <div>MEN</div>
+                    </a>
+                    <a href="/layouts/kidsHomepage.html">
+                        <div class="currentpage">KIDS</div>
+                    </a>
+                    <a href="/layouts/designArt.html">
+                        <div>DESIGN + ART</div>
+                    </a>
+                </div>
+                <div class="inside2"><a href="/layouts/HOME-womenPage.html"> <img
+                            src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></a></div>
+
+
+                <div class="rightside2">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                    <div><i class="fa-solid fa-bag-shopping"></i></div>
+                </div>
+            </div>
+
+
+            <!-- Black strip header icons -->
+            <div id="header">
+                <div id="strip">
+                    <div onclick="newArrivals()" class="options">NEW ARRIVALS</div>
+                    <div onclick="Designers()" class="options">DESIGNERS</div>
+                    <div onclick="Clothing()" class="options">CLOTHING</div>
+                    <div onclick="Shoes()" class="options">SHOES</div>
+                    <div onclick="Bags()" class="options">ACCESSORIES & BAGS</div>
+                    <div onclick="Yoox()" class="options">8 BY YOOX</div>
+                    <div onclick="Yooxygen()" class="options">YOOXYGEN</div>
+                    <div onclick="Collaborations()" class="options">COLLABORATIONS</div>
+                    <div onclick="Offers()" class="options">BEST OFFERS</div>
+                </div>
+            </div>
+            <!-- ------------------------------------------NEW ARRIVALS------------------------------------------ -->
+            <div class="hide NewArrivals" id="dropArrivals">
+                    <div class="dropdown">
+                        <div class="dropleft">
+                            <div class="loption"><a href="/layouts/womenDresses.html">DRESSES</a></div>
+                            <div class="loption"><a href="/layouts/womenTshirtsTops.html"> T-SHIRTS AND TOPS </a></div>
+                            <div class="loption"><a href="/layouts/menClothing.html"> MEN CLOTHING </a></div>
+                            <div class="loption"> <a href="/layouts/menFootwear.html"> MEN FOOTWEAR </a></div>
+                            <div class="loption"> <a href="/layouts/womenFootwear.html"> WOMEN FOOTWEAR </a></div>
+                            <div class="loption dark">VIEW ALL</div>
+                            <div class="loption">TOP DESIGNERS</div>
+                            <div class="loption padmed">UNIQUE FINDS</div>
+                        </div>
+                        <div class="dropright">
+                            <div class="imgbox">
+                                <img src="https://www.yoox.com/images/items/17/17216515mo_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
+                                <div class="name">BOTTEGA VENETA</div>
+                                <div class="brand">Mules and clogs</div>
+                                <div class="sd">
+                                    <span class="strikedoff">US$ 1.071,00</span><span class="discount">19% OFF</span>
+                                </div>
+                                <div class="price">US$ 867,00</div>
+                                <div class="size">35 36 37 38 39</div>
+                            </div>
+                            <div class="imgbox">
+                                <img src="https://www.yoox.com/images/items/15/15191180ql_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center"
+                                    alt="">
+                                <div class="name">8 BY YOOX</div>
+                                <div class="brand">Long dress</div>
+                                <div class="price">US$ 140,00</div>
+                                <div class="size">38 40 42 44 46</div>
+                            </div>
+                            <div class="imgbox">
+                                <img src="https://www.yoox.com/images/items/45/45657554kr_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center"
+                                    alt="">
+                                <div class="name">SEE BY CHLOE</div>
+                                <div class="brand">Cross-body bags</div>
+                                <div class="price">US$ 319,00</div>
+                            </div>
+                            <div class="imgbox">
+                                <img src="https://www.yoox.com/images/items/15/15196108mo_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center"
+                                    alt="">
+                                <div class="name">MARNI</div>
+                                <div class="brand">Midi dress</div>
+                                <div class="sd">
+                                    <div class="strikedoff">US$ 1.196,00</div><div class="discount">52% OFF</div>
+                                </div>
+                                <div class="price">US$ 563,00</div>
+                                <div class="size">42 48</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- ---------------------------------------------DESIGNERS------------------------------------------- -->
+            <div class="hide Designers" id="dropDesigners">
+                    <div class="dropdown">
+                        <div class="Designdropleft">
+                            <div class="headDesigners">DESIGNERS</div>
+                            <div class="cat">
+                                <div class="loption">ALAIA</div>
+                                <div class="loption">JACKQUEMUS</div>
+                                <div class="loption">BALENCIAGA</div>
+                                <div class="loption">JIL SANDER</div>
+                                <div class="loption">BOTTEGA VEENETA</div>
+                                <div class="loption">MAISON MARGIELA</div>
+                                <div class="loption">BRUNELLO CUCUNELLI</div>
+                                <div class="loption">MARNI</div>
+                                <div class="loption">BURBERRY</div>
+                                <div class="loption">MISSONI</div>
+                                <div class="loption">CELINE</div>
+                                <div class="loption">MIU MIU</div>
+                                <div class="loption">CHLOE</div>
+                                <div class="loption">OFF-WHITE</div>
+                                <div class="loption">DAINE VON FURSTENBERG</div>
+                                <div class="loption">PRADA</div>
+                                <div class="loption">DOLCE & GABANA</div>
+                                <div class="loption">ROBERT CAVALLI</div>
+                                <div class="loption">DRIES VAN NOTEN</div>
+                                <div class="loption">SAINT LAURENT</div>
+                                <div class="loption">DSQUARED2</div>
+                                <div class="loption">STELLA MCCARTNERY</div>
+                                <div class="loption">FENDI</div>
+                                <div class="loption">VALENTINO</div>
+                                <div class="loption">GUCCI</div>
+                                <div class="loption">VARSACE</div>
+                                <div class="loption">ISABEL MARANT</div>
+                                <div class="loption">8 BY YOOX</div>
+                            </div>
+                            <div class="designfooter">VIEW ALL DESIGNERS</div>
+                        </div>
+                        <div class="dropright">
+                            <div class="ling">
+                                <img src="https://www.yoox.com/images/yoox80/banners/6825_4_SeeByChloe_W_Second.jpg?634485886601286852" alt="">
+                                <div class="name">SEE BY CHLOE</div>
+                                <div class="size">FALL IN LOVE WITH THE NEW COLLECTION!</div>
+                            </div>
+                            <div class="ring">
+                                <div class="rtop">
+                                    <img src="https://www.yoox.com/images/yoox80/banners/6825_3_BottegaVeneta_W_Small.jpg?634485886601286852" alt="">
+                                    <div class="name">BOTTEGA VENETA</div>
+                                    <div class="size">UNIQUE AND UNMISTAKABLE STYLE</div>
+                                </div>
+                                <div class="rbottom">
+                                    <img src="https://www.yoox.com/images/yoox80/banners/6824_1_OffWhite_W_Small.jpg?634485886601286852" alt="">
+                                    <div class="name">OFF-WHITE</div>
+                                    <div class="size">THAT'S SO COOL!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- ----------------------------------------------CLOTHING------------------------------------------ -->
+        
+            <div class="hide NewArrivals" id="dropClothing">
+                <div class="dropdown">
+                    <div class="dropleft">
+                        <div class="headDesigners">CATEGORIES</div>
+                        <div class="loption">DRESSES</div>
+                        <div class="loption">T-SHIRTS AND TOPS</div>
+                        <div class="loption">SHIRTS</div>
+                        <div class="loption">SWEATERS AND SWEATSHIRTS</div>
+                        <div class="loption">JEANS AND DENIM</div>
+                        <div class="loption">SKIRTS</div>
+                        <div class="loption">PANTS</div>
+                        <div class="loption">JUMPSUITS AND OVERALLS</div>
+                        <div class="loption">JACKETS</div>
+                        <div class="loption">ACTIVEWEAR</div>
+                        <div class="loption dark">VIEW ALL</div>
+                        <div class="loption bold">NEW ARRIVALS</div>
+                        <div class="loption bold pad">SALE</div>
+                    </div>
+                    <div class="dropmiddle">
+                        <div class="headDesigners">DESIGNERS</div>
+                        <div class="loption">BALENCIAGA</div>
+                        <div class="loption">DOLCE & GABANA</div>
+                        <div class="loption">GUCCI</div>
+                        <div class="loption">LANVIN</div>
+                        <div class="loption">MAISON MARGIELA</div>
+                        <div class="loption">MARNI</div>
+                        <div class="loption">PRADA</div>
+                        <div class="loption">RICK OWENS</div>
+                        <div class="loption">VALENTINO</div>
+                        <div class="loption">VERSACE</div>
+                        <div class="loption bold">VIEW ALL DESIGNERS</div>
+                    </div>
+                    <div class="dropmiddle">
+                        <div class="headDesigners">INSPIRATION</div>
+                        <div class="loption">THE NEW STYLE GALLERY</div>
+                        <div class="loption">GET ACTIVE</div>
+                        <div class="loption">SOFT TOUCH</div>
+                        <div class="loption">DENIM ON DENIM</div>
+                        <div class="loption">STUNNING SILK</div>
+                        <div class="loption">WHAT TO WEAR WITH SNEAKERS</div>
+                        <div class="loption">YOOXYGEN SUSTAINABLEWEAR</div>
+                        <div class="loption">HI GUYS</div>
+                    </div>
+                    <div class="dropright">
+                        <div class="clothingimg">
+                            <img  src="https://www.yoox.com/images/yoox80/banners/6824_1_Wedding_WM_Second.jpg?634485886601286852"
+                                alt="">
+                            <div class="name">WONDERFUL WEDDINGS</div>
+                            <div class="size">CELEBRATE LOVE IN STYLE!</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------------SHOES---------------------------------------------- -->
+            <div class="hide NewArrivals" id="dropShoes">
+                <div class="dropdown">
+                    <div class="dropleft">
+                        <div class="headDesigners">CATEGORIES</div>
+                        <div class="loption">SNEAKERS</div>
+                        <div class="loption">PUMPS</div>
+                        <div class="loption">SANDALS</div>
+                        <div class="loption">ANKLE BOOTS</div>
+                        <div class="loption">MULES AND CLOGS</div>
+                        <div class="loption">BALLET FLATS</div>
+                        <div class="loption">LACED SHOES</div>
+                        <div class="loption">LOAFERS</div>
+                        <div class="loption">ESPADRILLES</div>
+                        <div class="loption">BOOTS</div>
+                        <a href="/layouts/womenShoes.html"><div class="loption dark">VIEW ALL</div> </a>
+                        <div class="loption bold">NEW ARRIVALS</div>
+                        <div class="loption bold pad">SALE</div>
+                    </div>
+                    <div class="dropmiddle">
+                        <div class="headDesigners">DESIGNERS</div>
+                        <div class="loption">BALENCIAGA</div>
+                        <div class="loption">DOLCE & GABANA</div>
+                        <div class="loption">GUCCI</div>
+                        <div class="loption">LANVIN</div>
+                        <div class="loption">MAISON MARGIELA</div>
+                        <div class="loption">MARNI</div>
+                        <div class="loption">PRADA</div>
+                        <div class="loption">RICK OWENS</div>
+                        <div class="loption">VALENTINO</div>
+                        <div class="loption">VERSACE</div>
+                        <div class="loption bold">VIEW ALL DESIGNERS</div>
+                    </div>
+                    <div class="dropmiddle">
+                        <div class="headDesigners">INSPIRATION</div>
+                        <div class="loption">THE NEW STYLE GALLERY</div>
+                        <div class="loption">GET ACTIVE</div>
+                        <div class="loption">SOFT TOUCH</div>
+                        <div class="loption">PUNK SHOES</div>
+                        <div class="loption">STUNNING SILK</div>
+                        <div class="loption">WHAT TO WEAR WITH SNEAKERS</div>
+                        <div class="loption">BOLD BOOTS</div>
+                        <div class="loption">HI GUYS</div>
+                    </div>
+                    <div class="dropright">
+                        <div class="clothingimg">
+                            <img src="https://www.yoox.com/images/yoox80/banners/6824_3_ShoesEdit_Second_W.jpg?634485886601286852"
+                                alt="">
+                            <div class="name">FELL GOOD FOOTWEAR</div>
+                            <div class="size">PUT YOUR BEST FOOT FORWARD WITH OUR EDIT OF SEASONAL SHOES</div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------------ACCESSORIES AND BAGS-------------------------------------- -->
+            <div class="hide NewArrivals" id="dropBags">
+                <div class="dropdown">
+                    <div class="dropleft">
+                        <div class="headDesigners">CATEGORIES</div>
+                        <div class="loption">HANDBAGS</div>
+                        <div class="loption">BACKPACK & FANNY PACKS</div>
+                        <div class="loption">EYEWEAR</div>
+                        <div class="loption">JEWELRY</div>
+                        <div class="loption">WATCHES</div>
+                        <div class="loption">HATS</div>
+                        <div class="loption">WALLETS</div>
+                        <div class="loption">BELTS</div>
+                        <div class="loption">LUGGAGE</div>
+                        <div class="loption">SCARVES AND FOULARDS</div>
+                        <div class="loption dark">VIEW ALL</div>
+                        <div class="loption bold">NEW ARRIVALS</div>
+                        <div class="loption bold pad">SALE</div>
+                    </div>
+                    <div class="dropmiddle">
+                        <div class="headDesigners">DESIGNERS</div>
+                        <div class="loption">BALENCIAGA</div>
+                        <div class="loption">BOTTEGA VENETA</div>
+                        <div class="loption">DOLCE & GABANA</div>
+                        <div class="loption">GUCCI</div>
+                        <div class="loption">CHLOE</div>
+                        <div class="loption">MAISON MARGIELA</div>
+                        <div class="loption">MARNI</div>
+                        <div class="loption">PRADA</div>
+                        <div class="loption">RICK OWENS</div>
+                        <div class="loption">VALENTINO</div>
+                        <div class="loption">VERSACE</div>
+                        <div class="loption bold">VIEW ALL DESIGNERS</div>
+                    </div>
+                    <div class="dropmiddle">
+                        <div class="headDesigners">INSPIRATION</div>
+                        <div class="loption">VERY IMPORTANT DETAILS</div>
+                        <div class="loption">EXTREME DETAILS</div>
+                        <div class="loption">HI GUYS</div>
+                    </div>
+                    <div class="dropright">
+                        <div class="clothingimg">
+                            <img src="https://www.yoox.com/images/yoox80/banners/6824_1_FocusOnEyewear_W_Dropdown.jpg?634485886601286852"
+                                alt="">
+                            <div class="name">ALL EYES ON YOU</div>
+                            <div class="size">STEAL THE SHOW WITH THIS STANDOUT ACCESSORIES</div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------------------8 BY VOOX-------------------------------------------- -->
+            <div class="hide NewArrivals" id="dropYoox">
+                <div class="dropdown">
+                    <div class="dropleft">
+                        <div class="headDesigners">CATEGORIES</div>
+                        <div class="loption">CLOTHING</div>
+                        <div class="loption">SHOES</div>
+                        <div class="loption">ACCESSORIES & BAGS</div>
+                        <div class="loption dark">VIEW ALL</div>
+                        <div class="loption padbottom bold">NEW ARRIVALS</div>
+                    </div>
+                    <div class="dropright">
+                        <div class="clothingimg">
+                            <img src="https://www.yoox.com/images/yoox80/banners/6833_4_8byoox_Dropdown.jpg?634485886601286852"
+                                alt="">
+                            <div class="name">WHERE PEOPLE DANCE</div>
+                            <div class="size">THE NEW SS22 COLLECTION FROM 8 BY YOOX</div>
+                        </div>
+                        <div class="clothingimg padleft">
+                            <img src="https://www.yoox.com/images/yoox80/banners/6833_2_8byoox_Game_Dropdown.jpg?634485886601286852"
+                                alt="">
+                            <div class="name">GAME ON!</div>
+                            <div class="size">PLAY THE 8 BY YOOX VIDEO GAME</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------------YOOXGYGEN------------------------------------------ -->
+            <div class="hide Designers" id="dropYooxygen">
+                <div class="dropdown">
+                    <div class="dropleft">
+                        <div class="loption">EYOOXYGEN IS THE DESTINATION DEDICATED TO SUSTAINABLE FASHION. DRIVE CHANGE THROUGH OUR EDIT OF BRANDS AND PRODUCTS THAT
+                        DEMONSTRATE A POSITIVE SOCIAL AND ENVIRONMENTAL IMPACT.</div>
+                        <div class="loption">CLOTHING</div>
+                        <div class="loption">SHOES</div>
+                        <div class="loption">ACCESSORIES & BAGS</div>
+                        <div class="loption dark">VIEW ALL</div>
+                        <div class="loption">ALIGHIERI X YOOX</div>
+                        <div class="loption">RETHINK WITH</div>
+                        <div class="loption">LEVI'S</div>
+                        <div class="loption">VEJA</div>
+                        <div class="loption">FAITHFULL THE BRAND</div>
+                        <div class="loption bold pad">DISCOVER MORE</div>
+                    </div>
+                    <div class="dropright">
+                        <div class="ling">
+                            <img src="https://www.yoox.com/images/yoox80/banners/5460_1_TalentLeahThomas_W_DD.jpg?634485886601286852"
+                                alt="">
+                            <div class="name">SURROUNDED BY NATURE</div>
+                            <div class="size">GET INSPIRED BY LEAH THOMAS</div>
+                        </div>
+                        <div class="ring">
+                            <div class="rtop">
+                                <img src="https://www.yoox.com/images/yoox80/banners/5460_1_Yooxygen_W_Small.png?634485886601286852"
+                                    alt="">
+                                <div class="name">YOOXYGEN</div>
+                                <div class="size">DISCOVER ALL THE PLANET-POSITIVE BRANDS</div>
+                            </div>
+                            <div class="rbottom">
+                                <img src="https://www.yoox.com/images/yoox80/banners/5460_1_CaterinaGatta_Small.jpg?634485886601286852"
+                                    alt="">
+                                <div class="name">RETHINK WITH</div>
+                                <div class="size">CATERINA GATTA X YOOX</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- -----------------------------------------COLLABORATIONS----------------------------------------- -->
+            <div class="hide NewArrivals" id="dropCollaborations">
+                <div class="dropdown">
+                    <div class="dropleft">
+                        <div class="loption">EXCLUSIVE COLLABORATIONS, LIMITED EDITIONS AND NEW FASHION AND SPORTSWEAR COLLECTIONS: DISCOVER THEM NOW!</div>
+                        <div class="loption">FURLA</div>
+                        <div class="loption">MONTBLANC</div>
+                        <div class="loption">SEE BY CHLOE</div>
+                        <div class="designfooter padbot">VIEW ALL</div>
+                    </div>
+                    <div class="dropright">
+                        <div class="clothingimg">
+                            <img src="https://www.yoox.com/images/yoox80/banners/6825_4_SeeByChloe_W_Second.jpg?634485886601286852"
+                                alt="">
+                            <div class="name">WHERE PEOPLE DANCE</div>
+                            <div class="size">THE NEW SS22 COLLECTION FROM 8 BY YOOX</div>
+                        </div>
+                        <div class="clothingimg padleft">
+                            <img src="https://www.yoox.com/images/yoox80/banners/6825_1_BaumeMercier_DD.jpg?634485886601286852"
+                                alt="">
+                            <div class="name">GAME ON!</div>
+                            <div class="size">PLAY THE 8 BY YOOX VIDEO GAME</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------------------------------BEST OFFERS------------------------------------------- -->
+            <div class="hide Designers" id="dropOffers">
+                <div class="dropdown">
+                    <div class="dropleft">
+                        <div class="loption">CLOTHING</div>
+                        <div class="loption">SHOES</div>
+                        <div class="loption">ACCESSORIES & BAGS</div>
+                        <div class="loption dark">VIEW ALL</div>
+                    </div>
+                    <div class="dropright">
+                        <div class="ling">
+                            <img src="https://www.yoox.com/images/yoox80/banners/6655_1_01_newreduction_ww.jpg?634485886601286852"
+                                alt="">
+                            <div class="name">DISCOVER THE LATEST MARKDOWNS FROM</div>
+                            <div class="size">BURBERRY, GCDS AND MANY MORE WITH UP TO 65% OFF</div>
+                        </div>
+                        <div class="ring1 pad">
+                            <div class="rtop">
+                                <img src="https://www.yoox.com/images/yoox80/banners/6655_1_02_musthaveDD_ww.jpg?634485886601286852"
+                                    alt="">
+                                <div class="name">CREATE THE PERFECT LOOK WITH THESE BUDGET-FRIENDLY BUYS</div>
+                                <div class="size">AND DISCOVER NEW OFFERS EACH WEEK</div>
+                            </div>
+                            <div class="rbottom">
+                                <img src="https://www.yoox.com/images/yoox80/banners/6655_1_03_clearanceDD_ww.jpg?634485886601286852"
+                                    alt="">
+                                <div class="name">SHOP THE BEST DEALS</div>
+                                <div class="size">STARTING AT 65% OFF > ACT FAST!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main content of page -->
+
+    <div id="content">
+        <img class="fullwidth" src="https://www.yoox.com/images/yoox80/banners/6821_1_Ceremony_Main_K.jpg?634485886601286852&impolicy=cropDefault&width=960&height=510"/>
+        <div id="firstcardcontent">
+            <p id="unique"> LET'S PARTY! </p>
+            <p id="uniquesub"> Festive looks for the littlest guests </p>
+            <div id="shopinspire">
+                <a href="#"><p>SHOP GIRLS</p></a>
+                <a href="#"><p>GET BOYS</p></a>
+            </div>
+        </div>
+
+        <div id="headings">
+            <p id="newarrival"> NEW ARRIVALS GIRLS </p>
+            <a href="#"><p class="viewall"> VIEW ALL </p> </a>
+        </div>
+
+        <div id="threecards">
+            <div>
+                <img src="https://www.yoox.com/images/items/12/12788309HN_14_f.jpg?impolicy=crop&width=306&height=390"/>
+                <div id="details">
+                    <p id="itemname"> VANS </p>
+                    <p id="categ"> Sweatshirt</p>
+                    <p id="price"> US$ 92,00</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/13/13773489EL_14_f.jpg?impolicy=crop&width=306&height=390"/>
+                <div id="details">
+                    <p id="itemname"> NAME IT </p>
+                    <p id="categ"> Denim pants</p>
+                    <p id="price"> US$ 40,00</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/17/17239634NM_14_f.jpg?impolicy=crop&width=306&height=390"/>
+                <div id="details">
+                    <p id="itemname"> GOLDEN GOOSE DELUX BRAND </p>
+                    <p id="categ"> Sneakers</p>
+                    <p id="price"> US$ 283,00</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="headings">
+            <p id="newarrival"> NEW ARRIVALS BOYS </p>
+            <a href="#"><p class="viewall"> VIEW ALL </p> </a>
+        </div>
+
+        <div id="threecards">
+            <div>
+                <img src="https://www.yoox.com/images/items/54/54183813RE_14_f.jpg?impolicy=crop&width=306&height=390"/>
+                <div id="details">
+                    <p id="itemname"> NIKE </p>
+                    <p id="categ"> Athletic outfit</p>
+                    <p id="price"> US$ 92,00</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/17/17240953XE_14_f.jpg?impolicy=crop&width=306&height=390"/>
+                <div id="details">
+                    <p id="itemname"> VANS </p>
+                    <p id="categ"> Sneakers</p>
+                    <p id="price"> US$ 40,00</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/12/12789956EA_14_f.jpg?impolicy=crop&width=306&height=390"/>
+                <div id="details">
+                    <p id="itemname"> KENZO </p>
+                    <p id="categ"> T-shirt</p>
+                    <p id="price"> US$ 283,00</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="headings">
+            <p id="newarrival"> DESIGNERS </p>
+            <a href="#"><p class="viewall"> GIRLS   |    BOYS </p> </a>
+        </div>
+            
+       <div id="designerCards">
+        <div id="designers">
+            <p id="heading"> DESIGNERS </p>
+            <ul type="none" id="names">
+                <li> DOLCE & GABBANA </li>
+                <li> DSQUARED2 </li>
+                <li> ROBERTO CAVALLI </li>
+                <li> MARNI </li>
+                <li> STELLA MCCARTNEY </li>
+                <li> MAISON MARGIELA </li>
+                <li> CHLOE </li>
+                <li> GUCCI </li>
+                <li> VERSACE </li>
+                <li> BALENCIAGA </li>
+            </ul>
+            <a href="#"> <p class="viewall"> VIEW ALL </p> </a>
+        </div>
+        <div id="designers">
+            <p id="heading"> DESIGNERS </p>
+            <ul type="none" id="names">
+                <li> DOLCE & GABBANA </li>
+                <li> DSQUARED2 </li>
+                <li> ROBERTO CAVALLI </li>
+                <li> MARNI </li>
+                <li> STELLA MCCARTNEY </li>
+                <li> MAISON MARGIELA </li>
+                <li> CHLOE </li>
+                <li> GUCCI </li>
+                <li> VERSACE </li>
+                <li> BALENCIAGA </li>
+            </ul>
+            <a href="#"> <p class="viewall"> VIEW ALL </p> </a>
+        </div>
+        <div id="designers">
+            <p id="heading"> DESIGNERS </p>
+            <ul type="none" id="names">
+                <li> DOLCE & GABBANA </li>
+                <li> DSQUARED2 </li>
+                <li> ROBERTO CAVALLI </li>
+                <li> MARNI </li>
+                <li> STELLA MCCARTNEY </li>
+                <li> MAISON MARGIELA </li>
+                <li> CHLOE </li>
+                <li> GUCCI </li>
+                <li> VERSACE </li>
+                <li> BALENCIAGA </li>
+            </ul>
+            <a href="#"> <p class="viewall"> VIEW ALL </p> </a>
+        </div>
+       </div>
+            
+        <div id="sectionfour">
+            <div id="one">
+                <img  src="https://www.yoox.com/images/yoox80/banners/6821_5_IlGufo_Tris_K.jpg?634485886601286852#width=387&height=540"/>
+                <p id="unique"> IL GUFO </p>
+                <p id="uniquesub"> Outdoor adventures </p>
+                <a href="#"> <p class="viewall"> SHOP GIRLS      &       SHOP BOYS </p> </a>
+            </div>
+            <div>
+                <img id="two" src="https://www.yoox.com/images/yoox80/banners/6821_2_DolceGabbana_Tris_K.jpg?634485886601286852#width=430&height=600"/>
+                <p id="unique"> DOLCE & GABBANA </p>
+                <p id="uniquesub"> Fun fashion for the little ones </p>
+                <a href="#"> <p class="viewall"> SHOP GIRLS      &       SHOP BOYS </p> </a>
+            </div>
+            <div id="one">
+                <img src="https://www.yoox.com/images/yoox80/banners/6821_5_StellaMcKids_Tris_K.jpg?634485886601286852#width=387&height=540"/>
+                <p id="unique"> STELLA MCCARTNEY KIDS </p>
+                <p id="uniquesub"> Come play with us! </p>
+                <a href="#"> <p class="viewall"> sHOP GIRLS</p> </a>
+            </div>
+        </div>
+
+
+        <div id="headings">
+            <p id="newarrival"> RECENTLY VIEWED </p>
+            <a href="#"><p class="viewall"> VIEW ALL </p> </a>
+        </div>
+
+
+        <div id="threecards">
+            <div>
+                <img src="https://www.yoox.com/images/items/11/11672527CD_14_f.jpg?impolicy=crop&width=306&height=390"/>
+                <div id="details">
+                    <p id="itemname"> PUMA </p>
+                    <p id="categ"> Sneakers</p>
+                    <p id="price"> US$ 142,00</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/17/17005882SL_14_f.jpg?impolicy=crop&width=306&height=390"/>
+                <div id="details">
+                    <p id="itemname"> MARNI </p>
+                    <p id="categ"> Sneakers</p>
+                    <p id="price"> US$ 274,00</p>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.yoox.com/images/items/11/11661914DU_14_f.jpg?impolicy=crop&width=306&height=390"/>
+                <div id="details">
+                    <p id="itemname"> EYTYS </p>
+                    <p id="categ"> Sneakers</p>
+                    <p id="price"> US$ 288,00</p>
+                </div>
+            </div>
+        </div>
+
+            <img class="fullwidth" src="https://www.yoox.com/images/yoox80/banners/6821_1_Spring_Main_K.jpg?634485886601286852&impolicy=cropDefault&width=960&height=510"/>
+        <div id="firstcardcontent">
+            <p id="unique"> SPRING HAS SPRUNG! </p>
+            <p id="uniquesub"> Find the season's must haves here </p>
+            <div id="shopinspire">
+                <a href="#"><p>SHOP GIRLS</p></a>
+                <a href="#"><p>GET BOYS</p></a>
+            </div>
+        </div>
+    </div>
+<br/>
+<div id="footer"></div>
+</body>
+</html>
+
+<script src="/layouts/yooxfooter/scripts/index.js" type="module"></script>

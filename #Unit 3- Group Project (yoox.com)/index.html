@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png"
+        href="https://www.yoox.com/media/yoox16/favicon/android-icon-192x192.png">
+    <link rel="stylesheet" href="/layouts/yooxfooter/styles/footer.css">
+    <title>YOOX</title>
+
+    <!-- Navbar styles -->
+    <style>
+        .topmost {
+            height: 35px;
+            width: 100%;
+            border-bottom: 1px solid rgb(208, 207, 207);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            height: 36px;
+            background: #fff;
+            top: 0;
+            z-index: 99999;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .topmost2 {
+            height: 55px;
+            width: 100%;
+            margin-top: 36px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            background: #fff;
+            top: 0;
+            z-index: 99999;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .topmost3 {
+            height: 35px;
+            width: 85%;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            border-bottom: 4px solid rgb(236, 236, 236);
+            border-width: 50%;
+            top: 0;
+            z-index: 99999;
+            margin-left: 8%;
+            /* padding-left: 100px;
+    padding-right: 100px; */
+        }
+
+        * {
+            box-sizing: border-box;
+            font-size: 11PX;
+            /* font-weight: 600; */
+            margin: 0;
+            padding: 0;
+            line-height: 30px;
+            color: #323232;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .exleft {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+
+            /* margin-left: 20px; */
+            /* padding: 0px 30px 0px 30px; */
+        }
+
+
+        .exleft2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+
+            /* margin-left: 20px; 
+     padding: 0px 30px 0px 30px;  */
+        }
+
+        .exleft3 {
+            cursor: pointer;
+            color: #b9b9b9;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            text-align: left;
+            margin-left: 1%;
+            /* margin-left: 20px; 
+     padding: 0px 30px 0px 30px;  */
+        }
+
+        .exleft2 :hover {
+            border-bottom: 4px solid yellow;
+        }
+
+
+
+        .exright {
+            margin-right: 20px;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        /* .exright2 {
+    margin-right: 20px;
+} */
+
+        .inside {
+            height: 30px;
+            width: 300px;
+            display: block;
+            margin-bottom: 5px;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            /* align-items: center; */
+            /* justify-content: space-around; */
+            /* border-right: 1px solid rgb(41, 38, 38); */
+
+        }
+
+        .inside2 {
+            height: 10px;
+            width: 300px;
+            display: block;
+            align-items: center;
+            margin-bottom: 15px;
+            margin-top: -12px;
+            cursor: pointer;
+            font-weight: 700;
+
+        }
+
+        .inside3 {
+            height: 10px;
+            width: 300px;
+            display: block;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: -12px;
+            margin-left: 16%;
+            cursor: pointer;
+            font-weight: 700;
+
+        }
+
+        .inside2 img {
+            height: 35px;
+            width: 100%;
+
+        }
+
+        .rightside {
+            text-align: center;
+            justify-content: space-around;
+            display: flex;
+            width: 150px;
+            height: 30px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .rightside2 {
+            text-align: center;
+            justify-content: space-around;
+            display: flex;
+            width: 150px;
+            height: 30px;
+            cursor: pointer;
+
+
+        }
+
+        .rightside3 {
+            text-align: center;
+            justify-content: space-between;
+            display: flex;
+            width: 150px;
+            gap: 10px;
+            height: 30px;
+            cursor: pointer;
+            margin-right: 3%;
+
+
+        }
+
+        .rightside div {
+
+            height: 16px;
+            padding-right: 5px;
+            text-align: center;
+            margin: auto;
+            word-spacing: 10px;
+        }
+
+        .rightside div a {
+            text-decoration: none;
+            color: black;
+            display: block;
+
+            word-spacing: 10px;
+        }
+
+        .rightside div:last-child {
+            border: none;
+            /* word-spacing: 10px; */
+        }
+
+        /* ---------------------------------------------------Navbar and DropDown Menu---------------------------------- */
+
+        .menucntr {
+
+            background: rgb(0, 0, 0);
+            z-index: 2;
+            width: 100%;
+            top: 0;
+            display: inline-block;
+            margin-left: 0%;
+
+            height: 35px;
+            width: 100%;
+            margin-top: 90px;
+            margin-bottom: 5px;
+            justify-content: space-around;
+            /* align-items: center; */
+            position: fixed;
+        }
+
+        .menucntr>ul {
+            background-color: rgb(0, 0, 0);
+            z-index: 2;
+            display: inline-block;
+            margin-left: 18%;
+            position: relative;
+            margin-top: 0px;
+            /* padding-bottom: 50px; */
+            height: 35px;
+        }
+
+        .lvl-1>li {
+            float: left;
+            display: block;
+            list-style: none;
+            cursor: pointer;
+
+        }
+
+
+        .lvl-1>li :hover {
+            color: rgb(156, 146, 146);
+
+        }
+
+        .lvl-1>li>a {
+            font-weight: 600;
+            display: inline-block;
+            font-size: 11.5px;
+            line-height: 10px;
+            overflow: visible;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            text-transform: uppercase;
+            border-bottom: 4px solid transparent;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        .menucntr>ul>li>.sub-menu {
+            position: absolute;
+            width: 100%;
+            /* border: 2px solid black; */
+            /* background-color: white; */
+            left: 0;
+            right: 0;
+            /* visibility: hidden; */
+        }
+
+
+
+        .menucntr>ul>li>.sub-menu>.col {
+            display: flex;
+            justify-content: space-around;
+            width: 140.8%;
+            background-color: white;
+            margin-left: -20%;
+            visibility: hidden;
+
+        }
+
+        .menucntr>ul>li>.sub-menu>.col>div {
+            gap: 10px;
+
+        }
+
+        .menucntr ul li :hover .col {
+            visibility: visible;
+        }
+
+        .sub-menu {
+            height: 5px;
+            margin-top: 0;
+        }
+
+        .sub-menu>.col>div>h5 {
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .sub-menu>.col>div>a {
+            font-weight: 500;
+            font-size: 11px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .sub-menu>.col>div>p {
+            font-weight: 500;
+            font-size: 11px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #content {
+            background-color: #dedff3;
+            margin-top: 2%;
+        }
+
+        #userflow {
+            width: 70%;
+            margin: auto;
+            margin-top: 9.2%;
+            border: 5px solid teal;
+        }
+
+        #userflow img {
+            height: auto;
+            margin-top: 5%;
+            width: 90%;
+            padding: 2%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="top1">
+            <div class="topmost">
+                <div class="exleft">
+                    <div> <select class="country">
+                            <option><u>UNITED STATES</u></option>
+                            <option><u>UNITED KINGDOM</u></option>
+                            <option><u>INDIA</u></option>
+                            <option><u>AUSTRALIA</u></option>
+                            <option><u>SPAIN</u></option>
+                            <option><u>ITALY</u></option>
+                            <option><u>DUBAI</u></option>
+                            <option><u>...</u></option>
+                        </select>
+                    </div>
+                    <div><u>CUSTOMER CARE</u></div>
+                    <!-- <span style="color: black;">shop now></span> -->
+                </div>
+                <div class="inside"> FREE STANDARD SHIPPING ON ORDERS OVER $100 </div>
+                <div class="rightside">
+                    <!-- <div><a>Track Order</a></div> -->
+                    <div><a><i class="fa-solid fa-pencil"></i><u>Register</u></a></div>
+                    <div class="login"><a href="/layouts/HOME-women.html"><i
+                                class="fa-solid fa-unlock"></i><u>Login</u></a></div>
+                    <!-- <div><a href="singup.html">Sign Up</a></div> -->
+                    <!-- <div></div> -->
+                </div>
+            </div>
+
+            <div class="topmost2">
+                <div class="exleft2">
+                    <a href="/layouts/HOME-women.html">
+                        <div>WOMEN</div>
+                    </a>
+                    <a href="/layouts/HOME-women.html">
+                        <div class="currentpage">MEN</div>
+                    </a>
+                    <a href="/layouts/HOME-women.html">
+                        <div>KIDS</div>
+                    </a>
+                    <a href="/layouts/HOME-women.html">
+                        <div>DESIGN + ART</div>
+                    </a>
+                </div>
+                <div class="inside2"><a href="/layouts/HOME-women.html"> <img
+                            src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></a></div>
+
+
+                <div class="rightside2">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div><i class="fa-regular fa-heart"></i></div>
+                    <div><i class="fa-solid fa-bag-shopping bag"></i></div>
+                </div>
+            </div>
+            <nav class="menumain">
+                <div class="menucntr">
+                    <ul class="lvl-1">
+                        <li class="firstli"><a href="#">NEW ARRIVALS</a>
+                            <div class="sub-menu">
+                                <div class="col">
+                                    <div>
+                                        <h5>CATEGORIES</h5>
+                                        <p> DRESSES </p>
+                                        <p> T-SHIRTS AND TOPS </p>
+                                        <P>SWEATERS AND SWEATSHIRTS</P>
+                                        <P>JEANS AND DENIM</P>
+                                        <P>SKIRTS</P>
+                                        <P>PANTS</P>
+                                        <P>JUMPSUITS AND OVERALLS</P>
+                                        <P>JACKETS</P>
+                                        <P>ACTIVEWEAR</P>
+                                        <h5>VIEW ALL</h5>
+                                    </div>
+                                    <div>
+                                        <h5>DESIGNERS</h5>
+                                        <P>BALENCIAGA</P>
+                                        <P>DOLCE & GABBANA</P>
+                                        <P>GUCCI</P>
+                                        <P>MAISON MARGIELA</P>
+                                        <P>MARNI</P>
+                                        <P>OFF-WHITE™</P>
+                                        <P>PRADA</P>
+                                        <P>VALENTINO</P>
+                                        <P>VERSACE</P>
+                                        <P>8 BY YOOX</P>
+                                        <h5>VIEW ALL DESIGNERS</h5>
+                                    </div>
+                                    <div>
+                                        <h5>INSPIRATION</h5>
+                                        <P>THE NEW STYLE GALLERY</P>
+                                        <P>GET ACTIVE</P>
+                                        <P>SOFT TOUCH</P>
+                                        <P>INSPIRATION</P>
+                                        <P>DENIM ON DENIM</P>
+                                        <P>STUNNING SILK</P>
+                                        <P>WHAT TO WEAR WITH TRAINERS</P>
+                                        <P>YOOXYGEN SUSTAINABLE WEAR</P>
+                                        <P>HI GUYZ</P>
+                                    </div>
+                                    <div>
+                                        <img style="margin-top: 10px; width:300px; height:350px;"
+                                            src="https://www.yoox.com/images/yoox80/banners/6824_1_Wedding_WM_Second.jpg?634485886869569819">
+                                        <p style="text-align:center;">CELEBRATE LOVE IN STYLE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">DESIGNERS</a></li>
+                        <li><a href="#">CLOTHING</a></li>
+                        <li><a href="#">SHOES</a></li>
+                        <li><a href="#">ACESSORIES & BAGS</a></li>
+                        <li><a href="#">8 BY YOOX</a></li>
+                        <li><a href="#">YOOXYGEN</a></li>
+                        <li><a href="#">COLLABORATIONS</a></li>
+                        <li><a href="#">BEST DEALS</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="content">
+        <div id="userflow">
+           <a href="/layouts/HOME-women.html">  <img src="/User Flow Diagram.png"> </a>
+        </div>
+    </div>
+
+
+    <div id="footer"></div>
+</body>
+
+</html>
+<script src="/layouts/yooxfooter/scripts/index.js" type="module"></script>
