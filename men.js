@@ -1,3 +1,5 @@
+
+
 let downArrivals = document.getElementById("dropArrivals")
 let dropDesigners = document.getElementById("dropDesigners")
 let dropClothing = document.getElementById("dropClothing")
@@ -316,3 +318,5 @@ data2.forEach((el) => {
     container2.append(box);
 
 })
+// import footer from "./Yoox Footer/components/footer.js"
+// document.getElementById("footer").innerHTML = footer();

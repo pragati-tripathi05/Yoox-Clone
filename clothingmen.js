@@ -1493,6 +1493,8 @@ img.src = el.image_url;
 
 var btn = document.createElement("button");
 btn.innerText = "Add to Cart";
+btn.style.backgroundColor="black";
+btn.style.color="white"
 btn.addEventListener("click", function () {
     addToCart(el);
     window.location.reload();
@@ -1517,3 +1519,7 @@ function addToCart(elem) {
     localStorage.setItem("cartData", JSON.stringify(cartProducts));
     alert("item added to cart");
 }
+
+// import footer from "../Yoox Footer/components/footer.js"
+
+// document.getElementById("footer").innerHTML = footer();
