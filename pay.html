@@ -530,27 +530,21 @@ width : 30%;
         var newdiv = document.querySelector(".adrs")
     
         var p1 = document.createElement("p");
-        p1.innerText = elem.firstname;
+        p1.innerText = elem.name;
     
     
         var p2 = document.createElement("p");
-        p2.innerText = elem.mobile;
+        p2.innerText = elem.phone;
     
         var p3 = document.createElement("p");
-        p3.innerText = elem.country;
+        p3.innerText = elem.state;
     
         var p4 = document.createElement("p");
-        p4.innerText = elem.pincode;
-    
-        var p5 = document.createElement("p");
-        p5.innerText = elem.address;
-    
-        var p6 = document.createElement("p");
-        p6.innerText = elem.city;
+        p4.innerText = elem.zip;
     
         var p7 = document.createElement("p");
         p7.innerText = elem.state
-        newdiv.append(p1, p2, p3, p4, p5)
+        newdiv.append(p1, p2, p3, p4)
     
     
         addDiv.append(newdiv);
