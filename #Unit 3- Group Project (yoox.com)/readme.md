@@ -2,12 +2,13 @@
 # Unit-3-Group-Project-'yoox.com'
 
     YOOX.COM  is an Italian online fashion retailer created on 5 October 2015 after the merger between 
-    Yoox Group and Net-a-porter Group (NAP). 
-    It provides a vast range of online store for women, men ad kids fashion, alongwith design objects, art and home decor.
+    Yoox Group and Net-a-porter Group (NAP). It provides a vast range of online store for women, men and kids fashion, 
+    alongwith design objects, art and home decor.
 
 
 # About
-    This is our second group project at Masai School. We made the clone of yoox.com in seven days from scratch. We have added functionalities like, the dropdown menu, sorting, scrolling, hover effects, cart, payment, etc.
+    This is our second group project at Masai School. We made the clone of yoox.com in seven days from scratch. 
+    We have added functionalities like, the dropdown menu, sorting, scrolling, hover effects, cart, payment, etc.
 
 ## Team Members
 
