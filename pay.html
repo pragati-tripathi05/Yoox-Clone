@@ -520,13 +520,13 @@ width : 30%;
 
 <script>
 
-    var payment = JSON.parse(localStorage.getItem("address")) || [] ;
+    var payment = JSON.parse(localStorage.getItem("shippingDetails2")) || [] ;
  
     
     
     payment.map(function (elem) {
     
-        var addDiv = document.querySelector(".RightBox");
+        var addDiv = document.querySelector(".shppng");
         var newdiv = document.querySelector(".adrs")
     
         var p1 = document.createElement("p");
