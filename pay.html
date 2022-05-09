@@ -557,7 +557,7 @@ width : 30%;
         
     
     });
-    var cartdata = JSON.parse(localStorage.getItem("completedbag"))
+    var cartdata = JSON.parse(localStorage.getItem("products"))
     var total = cartdata.reduce(function(sum,elem,index,arr){
         return sum+Number(elem.price);
      },0);
