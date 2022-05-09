@@ -50,5 +50,5 @@ document.getElementById("sub_total").innerText=sum;
 
 
 let checkout=()=>{
-    window.location.href=("/payment.html")
+    window.location.href=("/pay.html")
 }
