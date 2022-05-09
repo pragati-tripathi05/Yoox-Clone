@@ -5,180 +5,556 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/png"
-        href="https://www.yoox.com/media/yoox16/favicon/android-icon-192x192.png">
-    <link rel="stylesheet" href="/styles/payment.css">
-    <title>YOOX - Checkout</title>
+    <title>Payment</title>
+    <script src="https://kit.fontawesome.com/861512847d.js" crossorigin="anonymous"></script>
 </head>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=Montserrat:wght@500;700&family=Poppins&display=swap");
+    
+body {
+        background: rgb(237, 237, 237);
+        
+    }
 
+.topmost {
+    height: 70px;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background: #fff;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    top: 0;
+    /* z-index: 99999; */
+   }
+
+
+
+
+.inside {
+    height: 10px;
+    width: 300px;
+    display: block;
+    align-items: center; 
+    margin-bottom: 20px; 
+    /* margin-top: 15px; */
+    cursor:pointer;
+    font-weight: 700;
+    margin-left: 30%;
+     
+}
+
+.inside img {
+    height: 35px;
+    width: 100%;
+
+}
+.rightside {
+    text-align: center;
+    justify-content: space-around; 
+    display: flex;
+    width: 150px;
+    height: 30px;
+    cursor:pointer;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bolder;
+    padding-top: 5px;
+    
+
+ } 
+
+ #Box{
+    background: rgb(237, 237, 237);;
+    margin-top: 100px;
+    margin-left: 6%;
+    margin-right:6%;
+    display:flex;
+    justify-content: space-between;
+    
+
+ }
+
+ #container {
+    background: rgb(237, 237, 237);;
+    width: 65%;
+      
+
+
+ }
+
+
+ .Email {
+
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+ }
+
+
+ .Email > div {
+
+    padding: 5px 0px 5px 0px; 
+
+ }
+
+
+.Efirst {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Efirst > h2{
+
+margin-left: 30px;
+
+}
+
+.Efirst > h5{
+
+margin-right: 30px;
+cursor: pointer;
+}
+
+
+
+.line {
+    margin-top: -10px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+}
+
+.shppng {
+    margin-top: 30px;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    
+}
+
+
+.shppng > div {
+ 
+    padding: 5px 0px 5px 0px; 
+    
+
+}
+
+
+.shp {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.shp > h2 {
+
+    margin-left: 30px;
+
+}
+
+.shp > i {
+    color:green;
+}
+
+.Efirst > i {
+    color: green;
+}
+
+.shp > h5 {
+
+    margin-right: 30px;
+    cursor:pointer;
+
+}
+
+.adrs {
+    height: 200px;
+    width: 80%;
+}
+
+
+.paymnt {
+    margin-top: 30px;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+.pay > h2 {
+  
+    margin-left: 30px;
+
+}
+
+
+
+.RightBox {
+
+background: white;
+height : 700px;
+width : 30%;
+
+}
+
+.bigtwo {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.top {
+    width: 100%;
+    /* border: 1px solid seagreen; */
+
+}
+/* .bigthree{ */
+   /* border: 1px solid blueviolet; */
+
+/* } */
+.bigtwo>.top>h4 {
+    /* padding-right: 40px; */
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(172, 167, 167);
+}
+
+.input{
+  /* border: 1px solid teal; */
+    padding: 5px;
+    margin-top: 20px;
+}
+.input input {
+    width: 60%;
+    margin-left: 30px;
+    padding: 5px;
+
+}
+
+.input input::placeholder {
+    font-size: 17px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.threeinput {
+    width: 80%;
+    margin: 20px 20px 0 30px;
+    /* border: 1px solid purple; */
+    padding: 5px;
+}
+.threeinput input {
+    width: 15%;
+    height: 30px;
+    margin-right: 30px;
+    
+}
+/* .threeinput svg{
+    padding: 10px;
+} */
+
+.credit {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+  
+}
+
+
+.credit > .check {
+
+    cursor:pointer;
+
+}
+
+.debit {
+
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    
+
+}
+
+ .debit > .check {
+
+    cursor:pointer;
+ }
+
+.pic {
+    display:flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 22px;
+    margin-right: 50%;
+    width: 34px;
+}
+
+.policy {
+    margin-right: 60px;
+    margin-left: 10px;
+
+}
+
+
+.policy > p {
+   
+    font-family: 'Montserrat',sans-serif;
+    font-size: 10px;
+
+}
+
+.policy > u {
+
+    cursor:pointer;
+}
+
+.btn {
+    background-color:black;
+    color: white;
+    width: 400px;
+    height: 50px;
+    margin-left: 16px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    cursor:pointer;
+}
+
+.btn a {
+    color: #f4f4f4;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+
+}
+/* .bottomtwo{ */
+    /* border: 1px solid brown; */
+/* } */
+.safe div {
+    display: flex;
+    /* border: 1px solid springgreen; */
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.safe div div p {
+    font-size: 12px;
+    color: rgb(146, 145, 145);
+    font-family: 'Montserrat',sans-serif;
+}
+.img img {
+    width: 700px;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.orderTotal {
+     
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.PriceBox {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.PriceBox > div {
+
+    padding: 5px 0px 5px 0px; 
+}
+
+
+</style>
 <body>
-    <header>
-        <div class="top1">
-            <div class="topmost2">
-                <div class="exleft2">
+    <div class="topmost">
+       
+        <div class="inside"> <img src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></div>
+           
+           
+           <div class="rightside"> NEED HELP? <i class="fa-solid fa-angle-down"></i></div>
+        </div>
+<div id="Box">
+    <div id="container">
+    <div class="Email">
+        <div class="Efirst"> <h2><i class="fa-solid fa-check"></i>E-mail</h2>
+            <h5 style="font-family: 'Montserrat',sans-serif;align-items:center; font-weight: 500;">MODIFY</h5>
+        
+        </div>
+        <div class="line" style="font-family: 'Montserrat',sans-serif; margin-left:30px;"><p>You are ordering as <u>sahizahidi@gmail.com</u></p></div>
+
+    </div>
+    <div class="shppng"> 
+        <div class="shp"><h2><i class="fa-solid fa-check"></i>Shipping</h2>
+            <h5 style="font-family: 'Montserrat',sans-serif;align-items:center; font-weight: 500;">MODIFY</h5>
+        </div>
+        <div style="font-family: 'Montserrat',sans-serif; font-weight: 550; margin-left:30px;"> RECIPIENT</div>
+        <div class="adrs" style="font-family: 'Montserrat',sans-serif; font-weight: 500; margin-left:30px;">      Details here:--
+        <!-- -----------------------append address here------------- -->
+        </div>
+        <div style="font-family: 'Montserrat',sans-serif; font-size: 13px; margin-left:30px;">Shipping Cost Free On Order Over $100 </div>
+        
+
+    </div>
+
+    <div class="paymnt">
+        <div class="pay"> <h2>Payment</h2>
+            <div class="bigtwo">
+                <div class="top">
+                    <p style="font-family: 'Montserrat',sans-serif; font-weight: 550; margin-left:30px;">Select payment mode</p>
+                    <div class="credit">
+                        <div>
+                            <input style=" margin-left:30px;" class="check" type="checkbox">
+                            <option style="display: inline;font-family: 'Montserrat',sans-serif; font-weight: 500;" class="top"><a href="#">Credit Card</a></option><br>
+                        </div>
+                        <div class="pic">
+                            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Visa.png">
+                            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_mastercard.png">
+                            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_amex.png">
+                            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Discover.png">
+                            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_JCB.png">
+                            
+                        </div>
+
+                    </div>
+                    <div class="debit">
+                        <div>
+                            <input style=" margin-left:30px;" class="check" type="checkbox">
+                            <option style="display: inline;font-family: 'Montserrat',sans-serif; font-weight: 500;" class="top"><a href="#">Debit Card</a></option><br>
+                        </div>
+                        <div class="pic">
+                            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Visa.png">
+                            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_mastercard.png">
+                            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_amex.png">
+                            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_Discover.png">
+                            <img src="https://www.yoox.com/media/yoox/apps/yoox-checkout/payment/credit-cards/img_payment_JCB.png">
+                        </div>
+                    </div>
 
                 </div>
-                <div class="inside2"><a href="/layouts/HOME-womenPage.html"> <img
-                            src="https://www.yoox.com/media/yoox16/header/yoox-logo-p.svg" alt=""></a></div>
+                <div class="input"><input placeholder="Card Number"></div>
+                <div class="input"><input placeholder="Cardholders Name"></div>
+                <div class="threeinput">
+                    <input type="text" placeholder="MM"><input type="text" placeholder="YY"><input type="text"
+                        placeholder="CVV"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+                        width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 16a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm1-5.16V14a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1a1.5 1.5 0 1 0-1.5-1.5a1 1 0 0 1-2 0a3.5 3.5 0 1 1 4.5 3.34Z" />
+                    </svg>
+                </div>
+                <div class="policy"> <p> YOOX may contact you for further payment verification prior to shipping your order. In this case, delivery times may be subject to delay.</p>
 
 
-                <div class="rightside2">
+                   <p> The personal information provided by you when purchasing items will be collected by YOOX in order to process your order and for other steps necessary to it, including operations related to administrative and fiscal obligations.
+                    The telephone number you enter may be used to provide you with information regarding the shipping of your order.
+                    The data processors are the personnel responsible for managing the site and the services related to it, marketing, IT systems and administration.</p>
+                    <p>Consult the <u>Privacy Policy</u> for more information about your rights.</p>
+                   <p> Consult our General <u>Terms and Conditions</u> of Sale.</p>
+                </div>
+                <button class="btn"><a href="last.html">PAY NOW</a></button>
+            </div>
+            <div class="bottomtwo">
+                <div class="safe">
                     <div>
-                        <p> NEED HELP? </p>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                                <path fill="currentColor"
+                                    d="M832 464h-68V240c0-70.7-57.3-128-128-128H388c-70.7 0-128 57.3-128 128v224h-68c-17.7 0-32 14.3-32 32v384c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V496c0-17.7-14.3-32-32-32zM332 240c0-30.9 25.1-56 56-56h248c30.9 0 56 25.1 56 56v224H332V240zm460 600H232V536h560v304zM484 701v53c0 4.4 3.6 8 8 8h40c4.4 0 8-3.6 8-8v-53a48.01 48.01 0 1 0-56 0z" />
+                            </svg>
+                            <p> Secure SSL Encryption</p>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em"
+                                height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20">
+                                <path fill="currentColor"
+                                    d="M2.842 3.865v7.434c0 4.047 3.205 7.327 7.158 7.327c3.953 0 7.158-3.28 7.158-7.327v-7.43L9.957 1.446L2.842 3.865ZM9.955 0L18.5 2.874v8.425C18.5 16.104 14.694 20 10 20s-8.5-3.896-8.5-8.701V2.874L9.955 0Zm4.419 6.485a.66.66 0 0 0-.948.057L9.11 11.511L6.322 8.426a.66.66 0 0 0-.948-.038a.698.698 0 0 0-.037.971l3.29 3.64a.66.66 0 0 0 .995-.01l4.807-5.534a.698.698 0 0 0-.055-.97Z" />
+                            </svg>
+                            <p>Guaranteed Safe Checkout</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <div id="content">
-        <div id="leftblock">
-            <h1 id="heading"> Payment </h1>
-            <p> Select payment method </p>
-
-            <div id="paymentMethod">
-                <div>
-                    <input type="radio" id="credit" value="credit">
-                    <label for="credit">Credit Card</label>
-                </div>
-                <div id="cards">
-                    <div> <img src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/visa-512.png" /> </div>
-                    <div> <img src="https://pngimg.com/uploads/mastercard/mastercard_PNG23.png" /> </div>
-                    <div> <img
-                            src="https://icons-for-free.com/download-icon-express+amex+billing+credit+card+payment+shop+icon-1320167879387312703_512.png" />
-                    </div>
-                    <div> <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/JCB_logo.svg/1280px-JCB_logo.svg.png" />
-                    </div>
-                </div>
-                <div>
-                    <p id="free"> <b> Free </b></p>
-                </div>
-            </div>
-
-            <p> <b> NEW CARD </b></p>
-            <p> Enter payment details </p>
-            <div id="paymentblock">
-                <div id="leftdetails">
-                    <form id="form">
-                        <input type="text" placeholder=" CARD DETAILS " />
-                        <p> Enter expiration date</p>
-                        <input type="text" placeholder=" MONTH " />
-                        <p> Enter card holder details</p>
-                        <input type="text" placeholder=" FIRST NAME " />
-                        <input type="text" placeholder="ADDRESS" />
-                        <input type="text" placeholder=" ZIP CODE" />
-                        <input type="checkbox" id="check" name="save" value="save"><label for="save"> Save this address
-                            in MYOOX</label>
-                        <input type="checkbox" id="check" name="save" value="save"><label for="save"> Set as
-                            default</label>
-                    </form>
-                </div>
-                <div id="rightdetails">
-                    <form id="form">
-                        <br /><br />
-                        <br /><br />
-                        <input type="text" placeholder=" YEAR" />
-                        <br /><br />
-                        <p></p>
-                        <input type="text" placeholder=" LAST NAME " />
-                        <input type="text" placeholder=" CITY" />
-                        <input type="text" placeholder=" STATE/PROVINCE" />
-                    </form>
-                </div>
-            </div>
-            <p> YOOX may contact you for further payment verification prior to shipping your order. In this case,
-                delivery times may be subject to delay.</p>
-
-            <br />
-            <p> <b> BILLING ADDRESS </b></p>
-            <input type="checkbox" id="check" value="billadd"><label for="billadd"> Use shipping address </label>
-
-            <p> The personal information provided by you when purchasing items will be collected by YOOX in order to process your order and for other steps necessary to it, including operations related to administrative
-                and fiscal obligations.
-                The telephone number you have provided may be used to communicate information related to the deliveries
-                of your orders. The parties appointed for collecting your information are the staff responsible for
-                managing the site and the services related to it, marketing, information systems and administration.
-            </p>
-            <a href="/layouts/orderComplete.html"><button id="proceed"> PROCEED </button></a>
-            <br/><br/>
-            <div id="paymentreview">
-                <h1> Review & Complete </h1>
-            </div>
-            <div id="gateways">
-                <div>
-                    <p class="gate"> SECURE CHECKOUT </p>
-                </div>
-                <div> <img src="https://cdn3.iconfinder.com/data/icons/credit-cards-pos/195/verified_by_visa-512.png" />
-                </div>
-                <div> <img class="gate"
-                        src="data:image/png;base64,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" />
-                </div>
-                <div> <img class="gate"
-                        src="https://s3.amazonaws.com/static.organiclead.com/Site-16d1fbb2-4db5-4696-b9f5-a7dcdce657b1/payment_4.png" />
-                </div>
-                <div> <img class="gate"
-                        src="https://www.seekpng.com/png/detail/336-3363854_geo-trust-logo-geotrust-logo-png.png" />
-                </div>
-            </div>
+            <div class="img"><img src="https://img.faballey.com/images/pmticonsweb.png" alt="" srcset=""></div>
         </div>
 
-        <div id="rightblock">
-            <div id="yourorderblock">
-                <h1 id="heading"> Your Order </h1>
-                <p> <b> TOTAL FOR ITEMS </b> </p>
-                <p> US$ </p>
-                <br />
-                <p> <b> SHIPPING </b> </p>
-                <p> Express 3-6 business days </p>
-                <br />
-                <p> <b> SHIPPING COSTS </b> </p>
-                <p> US$ </p>
-                <br />
-                <p> <b> PAYMENT </b> </p>
-                <p> US$ </p>
-                <br />
-                <p> <b> LOCAL TAXES AND DUTIES </b> </p>
-                <p> US$ </p>
-                <br />
-                <p> <b> ORDER TOTAL </b> </p>
-                <P class="rightly"> <b> US$</b> </P>
-                <br /> <br />
-                <hr />
-                <p> <b> YOU ARE PURCHASING: </b> </p>
-                <br /> <br />
-                <center>
-                    <p> <u> MODIFY </u> </p>
-                </center>
-            </div>
+
         </div>
+        
     </div>
+ 
 
-    <div id="faq">
-        <div id="faqtext">
-            <h1> Frequently Asked Questions</h1>
-            <div>
-                <div>
-                    <p>IS IT SAFE TO ENTER MY CREDIT / DEBIT CARD DATA? <i class="fa-solid fa-angle-down"></i></p>
-                </div>
-                <hr />
-                <div>
-                    <p>HOW CAN I ACCESS FAST CHECKOUT? <i class="fa-solid fa-angle-down"></i></p>
-                </div>
-                <hr />
-            </div>
-        </div>
+ <div class="RightBox">
+     <div class="PriceBox">
+     <div class=""><h2>Your Order</h2></div>
+     <div class="SubTotal">
+        <p style="color:#323232;font-family: 'Montserrat',sans-serif;font-weight:500">SUB TOTAL FOR ITEMS</p>
+        <span style="color:#323232;font-family: 'Montserrat',sans-serif;font-weight:500">
+        <span id="subTotl" style="color:#323232;font-family: 'Montserrat',sans-serif;font-weight:500"> </span>
     </div>
-
-    <div id="lastblack">
-        <p id="para1"> Powered by YOOX NET-A-PORTER GROUP - Copyright © 2000-2022 YOOX NET-A-PORTER GROUP S.p.A. -All
-            Rights Reserved - SIAE Licence # 401/1/526</p>
-        <p id="para2"> COOKIE POLICY / LEGAL AREA / PRIVACY POLICY </p>
+    <div> <p style="font-family: 'Montserrat',sans-serif;font-weight: 300;">SHIPPING COST</p>
+          <p  style="font-family: 'Montserrat',sans-serif;font-weight: 200;">Free</p>
     </div>
+    <div class="orderTotal">
+        <p style="color:#323232;font-family: 'Montserrat',sans-serif;font-weight:700">ORDER TOTAL</p>
+        <span style="color:#323232;font-family: 'Montserrat',sans-serif;font-weight:700">
+             <span id="totlPrice" style="color:#323232;font-family: 'Montserrat',sans-serif;font-weight:700"> </span>
+        </span>
+    </div>
+    <div class="adrs" style="font-family: 'Montserrat',sans-serif; font-weight: 500; margin-left:30px;">      Details here:--
+        <!-- -----------------------append address here------------- -->
+    </div>
+     
+     
+ </div>
+</div>
 </body>
 
-</html>
+<script>
 
-<script src="/scripts/shipping.js"> </script>
+    var payment = JSON.parse(localStorage.getItem("shippingDetails2")) || [] ;
+ 
+    
+    
+    payment.map(function (elem) {
+    
+        var addDiv = document.querySelector(".shppng");
+        var newdiv = document.querySelector(".adrs")
+    
+        var p1 = document.createElement("p");
+        p1.innerText = elem.name;
+    
+    
+        var p2 = document.createElement("p");
+        p2.innerText = elem.phone;
+    
+        var p3 = document.createElement("p");
+        p3.innerText = elem.state;
+    
+        var p4 = document.createElement("p");
+        p4.innerText = elem.zip;
+    
+        newdiv.append(p1, p2, p3, p4)
+    
+    
+        addDiv.append(newdiv);
+        
+    
+    });
+    var cartdata = JSON.parse(localStorage.getItem("completedbag"))
+    var total = cartdata.reduce(function(sum,elem,index,arr){
+        return sum+Number(elem.price);
+     },0);
+     document.querySelector("#subTotl").innerText=`$` + total;
+     
+     document.querySelector("#totlPrice").innerText= `$` + total;
+
+</script>
