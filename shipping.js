@@ -37,3 +37,12 @@ function data()
     localStorage.setItem("shippingDetails2", JSON.stringify(details2));
     // window.location.href = "/layouts/payment.html";
 }
+let products_detail=JSON.parse(localStorage.getItem("products"));
+let total=document.getElementById("total");
+total.innerText=products_detail.length;
+
+let sum=0;
+for(let i=0;i<products_detail.length;i++){
+    sum=sum+products_detail[i].price;
+}
+document.getElementById("sub_total").innerText=sum;
