@@ -94,11 +94,11 @@
 
 ## Tech Stack
 
-**HTML:** %
+**HTML:** 64.6%
 
-**CSS:** %
+**CSS:** 23.7%
 
-**JavaScript:** %
+**JavaScript:** 11.7%
 
 ![User Flow Diagram](https://user-images.githubusercontent.com/97211835/167448383-3a223413-4cec-47c2-aa8a-32be0b31584d.png)
 
