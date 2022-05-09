@@ -89,8 +89,7 @@
 
 ## Challenges and Learning
     We faced a few challenges in the beginning regarding distribution of work and in the end while merging the pages 
-    made by other members by pulling from github. However, we overcame the obstacles with 
-    better coordination and understanding.
+    made by other members by pulling from github. However, we overcame the obstacles with better coordination and understanding.
 
 
 ## Tech Stack
