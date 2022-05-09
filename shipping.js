@@ -46,3 +46,9 @@ for(let i=0;i<products_detail.length;i++){
     sum=sum+products_detail[i].price;
 }
 document.getElementById("sub_total").innerText=sum;
+
+
+
+let checkout=()=>{
+    window.location.href=("/payment.html")
+}
