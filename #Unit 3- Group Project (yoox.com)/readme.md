@@ -9,6 +9,8 @@
 # About
     This is our second group project at Masai School. We made the clone of yoox.com in seven days from scratch. 
     We have added functionalities like, the dropdown menu, sorting, scrolling, hover effects, cart, payment, etc.
+    
+## Deployment link : https://dapper-sable-604b5f.netlify.app/layouts/home-women
 
 ## Team Members
 
